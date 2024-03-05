@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'MadeOuterSansRegular';
+    src: local('MadeOuterSansRegular'),
+         url('./fonts/MADE Outer Sans Regular PERSONAL USE.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MadeOuterSansThin';
+    src: local('MadeOuterSansThin'),
+         url('./fonts/MADE Outer Sans Thin PERSONAL USE.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Kamerik105-Book';
+    src: local('Kamerik105-Book'),
+         url('./fonts/Kamerik105-Book.otf') format('opentype'),
+         url('./fonts/Kamerik105-Book.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Kamerik105-Bold';
+    src: local('Kamerik105-Book'),
+         url('./fonts/Kamerik105-Bold.otf') format('opentype'),
+         url('./fonts/Kamerik105-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Kamerik105-Light';
+    src: local('Kamerik105-Light'),
+         url('./fonts/Kamerik105-Light.otf') format('opentype'),
+         url('./fonts/Kamerik105-Light.ttf') format('truetype');
+}
+
+
+:root {
+    --max-width: 1920px;
+}    
+
+
+*{
+    /* border: none; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+    /* font-size: 0; */
+}
+.default__spacing{
+    margin: 2.5rem 4rem 0 4rem;
+}
+/* @media screen  and (min-width:1400px){
+    .default__spacing{
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+} */
+
+.default__margin--right{
+    margin-right: 4rem;
+}
+
+.default__margin--left{
+    margin-left: 4rem;
+}
+
+.default__margin--top{
+    margin-top: 4rem;
+}
+
+/*
+padding
+**/
+.default__padding--right{
+    padding-right: 4rem;
+}
+
+.default__padding--left{
+    padding-left: 4rem;
+}
+
+.default__padding--top{
+    padding-top: 4rem;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+  
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;} 
+} 
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;} 
+} 
+
+.react-multiple-carousel__arrow {
+    position: absolute;
+    outline: 0;
+    transition: all .5s;
+    border-radius: 35px;
+    z-index: 1000;
+    border: 0;
+    background:  #fe9e1b !important;
+    min-width: 43px;
+    min-height: 43px;
+    opacity: 1;
+    cursor: pointer; 
+    box-shadow: 7px 7px 20px -5px rgba(101,101,101,0.75) !important;
+    -webkit-box-shadow: 7px 7px 20px -5px rgba(101,101,101,0.75);
+    -moz-box-shadow: 7px 7px 20px -5px rgba(101,101,101,0.75);
+}
+
+@media screen and (max-width: 900px) {
+    .default__spacing{
+        margin: 1rem 1rem 0 1rem;
+    }
+    .default__margin--right{
+        margin-right: 1rem;
+    }
+    
+    .default__margin--left{
+        margin-left: 1rem;
+    }
+    
+    .default__margin--top{
+        margin-top: 1rem;
+    }
+    
+    /*
+    padding
+    **/
+    .default__padding--right{
+        padding-right: 1rem;
+    }
+    
+    .default__padding--left{
+        padding-left: 1rem;
+    }
+    
+    .default__padding--top{
+        padding-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 380px){
+
+.react-multi-carousel-dot-list{
+    padding-left: 20px !important;
+    
+    }
+}

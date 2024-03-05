@@ -1,0 +1,110 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+
+    /* padding: 20px; */
+
+}
+.logo__container{
+    width: 260px;
+    /* margin-top: 33px; */
+    /* padding: 18px; */
+    /* margin-left: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    /* margin: 20px; */
+    /* padding-left: 31px; */
+}
+.logo__container > img {
+    width: 100%;
+}
+
+.logo__container > img:hover {
+    cursor: pointer;
+}
+.goto__menu__container {
+    display: flex;
+    /* padding-left: 150px; */
+    /* margin-top: 10px; */
+    /* left: 20px; */
+    /* margin-right: 50px; */
+
+}
+.goto__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 66px; */
+    font-size: 18px;
+    /* margin-top: 43px; */
+    font-weight: normal;
+    gap: 22px;
+    letter-spacing: 4px;
+    font-family: 'Kamerik105-Book';
+}
+.menu:hover{    
+    color: #fe9e1b;
+    font-weight: 700;
+}
+.menuIcon{
+    /* margin-top: 30px; */
+    font-size:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+    cursor: pointer;
+
+}
+.menuIcon:hover{
+    color: #fe9e1b;
+}
+.menu {
+  text-decoration: none;
+  color: #232323;
+}
+.menu.active{
+    font-family: 'Kamerik105-Bold' ;    
+    color: black;
+}
+@media screen and (max-width: 1160px) {
+    .goto__container{
+        font-size: 15px;
+    }
+    .menuIcon{
+        font-size: 35px;
+    }
+    .logo__container{
+        width: 180px;
+    }
+}
+@media screen and (max-width: 900px) {
+
+    .goto__container{
+        display: none;
+    }
+    .logo__container img{
+        margin-top: 20px;
+        
+    }
+    .logo__container{
+        margin-left: 0%;
+    }
+    .menuIcon {
+        font-size: 34px;
+        margin-top: 38px;
+        padding-left: 55px;
+        cursor: pointer;
+    
+    }
+    .logo__container > img , .menuIcon{
+        margin-top: 0;
+    }
+}
+
+
+
+
