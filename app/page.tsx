@@ -3,6 +3,8 @@ import Head from "next/head";
 import styled, { keyframes } from "styled-components";
 import { fadeIn } from 'react-animations';
 import Header from '@/components/common/Header/Header'
+import MainSlider from '@/components/home/MainSlider/MainSlider';
+import RecentProjectsSlider from '@/components/home/RecentProjectsSlider/RecentProjectsSlider';
 const fadInKeyFrame = keyframes`${fadeIn}`;
 
 const FadeInDiv = styled.div`
@@ -25,9 +27,9 @@ export default function Home() {
 
       <FadeInDiv>
         <Header />
-        {/* <MainSlider /> */}
-        {/* 
+        <MainSlider />
         <RecentProjectsSlider />
+        {/* 
         <Services />
         <Process />
         <LogoCollection />

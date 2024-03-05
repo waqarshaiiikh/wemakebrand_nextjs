@@ -1,41 +1,32 @@
 import styles from './MainSlider.module.css';
 import 'react-multi-carousel/lib/styles.css';
-// import Carousel from 'react-multi-carousel';
-import { MenuText, MainTitles  } from "../Common/FontStyle/Fonts";
-import slide1 from './Main Slider/images-01.webp'
-import slide2 from './Main Slider/images-02.webp'
-import slide3 from './Main Slider/images-03.webp'
-import slide4 from './Main Slider/images-04.webp'
-import slide5 from './Main Slider/images-05.webp'
+import { MenuText, MainTitles  } from "../../common/FontStyle/Fonts";
+import slide1 from '@/public/assets/Main Slider/images-01.webp'
+import slide2 from '@/public/assets/Main Slider/images-02.webp'
+import slide3 from '@/public/assets/Main Slider/images-03.webp'
+import slide4 from '@/public/assets/Main Slider/images-04.webp'
+import slide5 from '@/public/assets/Main Slider/images-05.webp'
 import { styled } from 'styled-components';
-
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Keyboard, Pagination } from 'swiper/modules';
 
-// import required modules
-import { Keyboard, Autoplay, Pagination } from "swiper";
-
-
-// Import Swiper styles
 import "swiper/css/pagination";
 import "swiper/css";
 import "swiper/css/effect-fade";
+
 import { useCallback, useState } from 'react';
+import Image from 'next/image';
 
 
 
 const TriangleDiv = styled.div((props)=>({
   height:   '100%',
   width:    '410px',
-  backgroundColor: `rgb(${props.bgColor})`,
+  backgroundColor: props.color,
   clipPath: 'polygon(0 0, 100% 0%, 100% 100%, 46% 100%)',
   opacity: '0.75'
 }));
 
-const ImageDiv = styled.div((props)=>({
-  backgroundImage : `url('${props.url}')`,
-
-}));
 
 const SwipperStyle = styled.div(()=>({
   '& .swiper':{
@@ -83,19 +74,16 @@ const SwipperStyle = styled.div(()=>({
 
 const MainSlider = () => {
   const sliderArray = [
-  { bgColor: '49, 179, 187', image: slide1, heading:"ADVERTISEMENT", text:"We translate marketing objectives into visually captivating designs that engage, inform, and persuade your target audience." }, 
-  { bgColor: '37, 157, 143', image: slide2, heading: "WEB DESIGN", text: "We will enhance your brand by creating a visually appealing, user-friendly website that will engage visitors, and drive desired user actions." },
-  { bgColor: '0, 145, 146', image: slide3, heading: "BRANDING", text: "When creating a brand we think about strategic visual design, considering your brand's values, personality, and positioning in the market." },
-  { bgColor: '216, 12, 13', image: slide4, heading:"PUSHING BOUNDARIES", text:"We like to break conventional design approaches and explore new avenues, creating designs that captivate, challenge, and inspire." },
-  { bgColor: '245, 186, 39', image: slide5, heading:"INNOVATIVE CONTENT", text: "Visually compelling & innovative content are essential in creating a strong online presence, engaging audiences and driving business growth." }];
+  { bgColor: '#31B3BB', image: slide1, heading:"ADVERTISEMENT", text:"We translate marketing objectives into visually captivating designs that engage, inform, and persuade your target audience." }, 
+  { bgColor: '#5CB6AB', image: slide2, heading: "WEB DESIGN", text: "We will enhance your brand by creating a visually appealing, user-friendly website that will engage visitors, and drive desired user actions." },
+  { bgColor: '#40ADAE', image: slide3, heading: "BRANDING", text: "When creating a brand we think about strategic visual design, considering your brand's values, personality, and positioning in the market." },
+  { bgColor: '#E2494A', image: slide4, heading:"PUSHING BOUNDARIES", text:"We like to break conventional design approaches and explore new avenues, creating designs that captivate, challenge, and inspire." },
+  { bgColor: '#F8CC5D', image: slide5, heading:"INNOVATIVE CONTENT", text: "Visually compelling & innovative content are essential in creating a strong online presence, engaging audiences and driving business growth." }];
   const [backgroundColor, setBgColor] = useState(0);
 
 
-  const handleSlideChange = useCallback((swiper)=>{
-      // console.clear();
-      // console.table(swiper);
+  const handleSlideChange = useCallback((swiper:any)=>{
      setBgColor(swiper.activeIndex);
-    //  setBgColor(prev=>{ return (prev+1)%sliderArray.length});
   },[])
 
   return (
@@ -111,7 +99,7 @@ const MainSlider = () => {
               Based in London UK, we specialize in timeless logo design and systematic brand solutions. Helping companies connect with their audiences and scale their business.
             </p>
           </div>
-          <TriangleDiv bgColor={sliderArray[backgroundColor].bgColor} className={styles.bgColor} ></TriangleDiv>
+          <TriangleDiv color={sliderArray[backgroundColor].bgColor}></TriangleDiv>
         </div>
       </div>
 
@@ -150,20 +138,18 @@ const MainSlider = () => {
         >
           {
             sliderArray.map((slide, i) => {
-
+              
               return (
                 <SwiperSlide key={i}>
-
-                  <ImageDiv
-                    url={slide.image}
-                    className={styles.slider__image__individual}
-                    
+                  <div
+                    className={`${styles.slider__image__individual} relative`}
                   >
-                    <div className={styles.image__content}>
-                      <MainTitles >{slide.heading}</MainTitles>
+                    <Image src={slide.image} alt={`Slider Image ${i+1}`}/>
+                    <div className={`${styles.image__content} leading-[1.16] absolute bottom-0 right-0 `}>
+                      <MainTitles className='' >{slide.heading}</MainTitles>
                       <MenuText >{slide.text}</MenuText>
                     </div>
-                  </ImageDiv>
+                  </div>
                 </SwiperSlide>
 
               )

@@ -1,5 +1,4 @@
-
-.main__slider{
+.main__slider {
 
     position: relative;
     /* margin-top: 0.5rem; */
@@ -22,10 +21,10 @@
     color: black;
 }
 
-.SlidersDot{
+.SlidersDot {
     left: calc(100% - 500px) !important;
     right: unset !important;
-    bottom : -30px !important;
+    bottom: -30px !important;
 }
 
 .SlidersDot button {
@@ -42,7 +41,8 @@
     background-color: white;
     padding: 10px;
 }
-.image__content > p{
+
+.image__content>p {
     padding: 2px;
 }
 
@@ -58,8 +58,8 @@
     align-items: center; */
 
 }
-.wrapper__container {
-}
+
+.wrapper__container {}
 
 .paragraph {
     font-family: 'Kamerik105-Book';
@@ -84,29 +84,30 @@
 }
 
 .intro__slider {
- 
+
     width: 70%;
     position: absolute;
     top: 80px;
     right: 0px;
-    
+
     /* padding-right: calc(100% - 570px); */
 
 }
 
 .slider__image__individual {
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
     width: 500px;
     height: 500px;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;    
-    box-shadow: 7px 7px 20px -5px rgba(101,101,101,0.75);
-    -webkit-box-shadow: 7px 7px 20px -5px rgba(101,101,101,0.75);
-    -moz-box-shadow: 7px 7px 20px -5px rgba(101,101,101,0.75);
+    align-items: flex-end;
+    box-shadow: 7px 7px 20px -5px rgba(101, 101, 101, 0.75);
+    -webkit-box-shadow: 7px 7px 20px -5px rgba(101, 101, 101, 0.75);
+    -moz-box-shadow: 7px 7px 20px -5px rgba(101, 101, 101, 0.75);
 }
-.carousel__container{
+
+.carousel__container {
     padding: 0;
     margin: 0;
 }
@@ -115,11 +116,11 @@
     animation: fadeOut 2s;
 } */
 
-.slide__active{
+.slide__active {
     animation: none !important;
 }
 
-.SliderImageContainer{
+.SliderImageContainer {
     display: flex;
     justify-content: flex-end;
     /* opacity: 1; */
@@ -137,27 +138,28 @@
     border-left: 190px solid transparent;
     border-bottom: 177px solid transparent;
     /* border-right: 100px solid transparent; */
-    /* height: 80px; */
-    /* width: 410px; */
-    /* transform: skew(0deg); */
-    /* position: absolute; */
-    /* right: 2px; */
-    /* z-index: -99; */
-/* } */ 
+/* height: 80px; */
+/* width: 410px; */
+/* transform: skew(0deg); */
+/* position: absolute; */
+/* right: 2px; */
+/* z-index: -99; */
+/* } */
 
-    @media screen and (max-width: 620px) {
-        .image__content > p{
-            font-size: 12px;
-        }
+@media screen and (max-width: 620px) {
+    .image__content>p {
+        font-size: 12px;
     }
-        @media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 900px) {
     .paragraph {
         font-family: 'Kamerik105-Book';
         width: 89%;
         font-size: 14px;
         /* margin-left: 25px; */
         padding-top: 20px;
-        padding-right :10px;
+        padding-right: 10px;
         line-height: 19px;
     }
 
@@ -219,17 +221,18 @@
         padding-left: 1rem;
         padding-right: 1rem;
         padding-bottom: 1rem;
-        
+
     }
-    
-    
+
+
     .intro__container {
         padding-top: 12px;
         padding-bottom: 0px;
         height: unset;
         /* padding-bottom: 1rem; */
     }
-    .bgColor{
+
+    .bgColor {
         height: 400px !important;
         width: 100vw !important;
         clip-path: polygon(100% 0, 100% 0%, 100% 100%, 0% 100%) !important;

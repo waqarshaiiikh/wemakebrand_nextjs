@@ -1,14 +1,15 @@
 import Carousel from 'react-multi-carousel'
 import styles from './RecentProjectsSlider.module.css'
 import { styled } from 'styled-components'
-import { RecentProjects } from '../Data/Data'
+import { RecentProjects } from '../data'
 import { useState } from 'react'
-import IndividualProject from '../../Pages/Individual__Project'
+import Image from 'next/image'
+// import IndividualProject from '../../Individual__Project'
 
-const ImageDiv = styled.div((props)=>({
-  backgroundImage : `url('${props.url}')`,
+// const ImageDiv = styled.div((props)=>({
+//   backgroundImage : `url('${props.url}')`,
 
-}));
+// }));
 
 const RecentProjectsSlider = () => {
   const [showIndividualPage, setShowIndividualPage] = useState({state: false, data: {}})
@@ -61,20 +62,22 @@ const RecentProjectsSlider = () => {
         >
           {/* <div style={{width:'40px'}} className={'default__padding--left'}></div> */}
           {RecentProjects.slice(0, 8).map(slides =>
-            <ImageDiv  onClick={() => { onOpen(slides) }} 
-              url={slides.img} key={slides.id}
-              className={styles.slider__image__individual}>
-              <div onClick={() => { onOpen(slides) }} className={styles.image__content}>
+            <div  
+              key={slides.id}
+              onClick={() => { onOpen(slides) }} 
+              className={`relative ${styles.slider__image__individual}`}>
+              <Image src={slides.img} alt='slider images' quality={10}/>
+              <div onClick={() => { onOpen(slides) }} className={`${styles.image__content} absolute`}>
                 <a   className={styles.view}>VIEW PROJECT</a>
               </div>
-            </ImageDiv>
+            </div>
           )}
 
 
         </Carousel>
 
       </div>
-      {showIndividualPage.state && <IndividualProject project={showIndividualPage.data} onClose={onClose} />}
+      {/* {showIndividualPage.state && <IndividualProject project={showIndividualPage.data} onClose={onClose} />} */}
     </div>
     
   )

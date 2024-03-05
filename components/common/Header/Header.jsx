@@ -1,29 +1,20 @@
 "use client";
 import styles from "./Header.module.css";
 import MainLogoBlack from "@/public/assets/WMB - MAIN LOGO - BLACK.png";
-import { createPortal } from "react-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
-import Menu, { ContactUsMenu } from "../Menu/Menu";
+import Menu from "../Menu/Menu";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
-// import smallMainLogoBlack from '@/public/assets/logos/WMB - ICON LOGO - BLACK.png'
 
 const Header = () => {
   const [menuVisibility, setMenuVisibility] = useState(false);
-  const pathname = usePathname();
   const closeMenu = () => {
     setMenuVisibility(false);
   };
-  const [contactModal, setContactModal] = useState(false);
 
-  const openContact = () => {
-    setContactModal(true);
-  };
-  const closeMenuContact = () => {
-    setContactModal(false);
-  };
+  
+
   return (
     <div className={`${styles.Header} default__spacing`} id='header'>
       <div className={styles.logo__container}>
@@ -59,7 +50,7 @@ const Header = () => {
             </Link>
           </div>
           <div className={styles.goto}>
-            <Link className={styles.menu} href='/contact-us' onClick={openContact}> 
+            <Link className={styles.menu} href='/contact-us' > 
               CONTACT US
             </Link>
           </div>
@@ -72,9 +63,7 @@ const Header = () => {
         </div>
       </div>
       {menuVisibility && <Menu closeMenu={closeMenu} />}
-      {/* {pathname === '/contact-us' && (
-        <ContactUsMenu closeMenu={closeMenuContact}></ContactUsMenu>
-      )} */}
+
     </div>
   );
 };

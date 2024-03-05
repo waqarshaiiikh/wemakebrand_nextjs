@@ -1,0 +1,660 @@
+
+.brand__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 310px;
+}
+
+.brand__text_div{
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.menuIcon {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 60px;
+    height: 60px;
+    z-index: 100;
+
+    background-color: black;
+    color: white;
+    font-size: 2em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+/* Big Menu Styling */
+.bigMenuContainer {
+    display: none;
+    position: fixed;
+    display: flex;
+    top: 0;
+    right: 0;
+    z-index: 20001;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid purple; */
+}
+.content__menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.content__menu > div{
+    flex: 1;
+}
+
+.bigMenu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0);
+    width: 80%;
+    height: inherit;
+    color: white;
+    box-shadow: rgba(0,0,0,0.4) 0px 35px 22px 5px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+    align-content: center;
+
+    font-family: 'MadeOuterSansRegular';
+}
+
+.left {
+    /* height: 400px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+}
+
+.menuLogo {
+    width: 281px;
+    padding-bottom:60px ;
+}
+
+.menuLogo > img {
+    width: 200px;
+    aspect-ratio: 1;
+}
+.menuLogo > img:hover {
+    cursor: pointer;
+}
+
+.Follow__us__line {
+    width: 80%;
+    background-color: rgb(146, 146, 146);
+}
+.middle{
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.follow__us__text{
+    color: rgb(146, 146, 146) !important;
+}
+
+.heading {
+    margin-bottom: 30px;
+}
+.heading > h1 {
+    font-size: 1.8em;
+}
+
+.info {
+    display: flex;
+    margin-top: 15px;
+}
+
+.info p {
+    font-size: 15px;
+}
+
+.infoIcon {
+    color: #4a4a4a;
+    margin-right: 20px;
+}
+
+.infoIcon > img {
+    width: 100%;
+    filter: invert(50%);
+    height: 20px;
+    width: 20px;
+    background-color: rgba(0,0,0,0);
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    /* height: 100%; */
+}
+
+.menuNavContainer {
+    margin-right: 120px;
+    /* height: 400px; */
+    
+}
+
+.menuNavHeading {
+    /* padding-bottom: 20px; */
+    /* height: 50px; */
+    color: white;
+}
+
+.menuNavHeading > h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.left__wrapper{
+    display: flex;
+    /* height: 100%; */
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.md{
+    padding-bottom:15px ;
+}
+.menuNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.rightContainer{
+    width: 30%;
+}
+.menuNavItem {
+    /* height: 70px; */
+    /* padding-bottom: 20px; */
+    font-size: 40px;
+    
+}
+
+.menuNavItem > a {
+    text-decoration: none;
+    color: white;
+}
+.active > a {
+    color: rgb(254, 159, 30);
+}
+
+.menuNavItem > a:hover {
+    color: rgb(254, 159, 30);
+}
+
+.nonBigMenu {
+    position: fixed;
+    width: 100%;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.icons {
+    /* border: 2px solid purple; */
+    display: flex;
+    color: rgb(146, 146, 146);
+    font-size: 40px;
+}
+
+.icons img{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.margin__btm2{
+    margin-bottom: 80px;
+}
+
+.followText {
+    /* margin-top: 15px; */
+    /* margin-left: 100px; */
+    font-size: 25px;
+
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.leftWrapperInner{
+    height: 400px;
+}
+
+.menuInnerWrapper{
+    height: 400px;
+}
+
+/* .menuWrapperGrid {
+  border: 1px solid white;
+  display: grid;
+  grid-template-columns: 400px auto 400px;
+  grid-template-rows: auto auto;
+  row-gap: 60px;
+  justify-content: space-between;
+
+} */
+
+.menuWrapperGrid{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+   
+}
+
+/* 
+.menuWrapperGrid > div{
+    border: 1px solid white;
+} */
+
+.centerContainer{
+    width: 40%;
+}
+
+.menu1{
+ height: 400px;
+ margin-bottom: 35px;
+}
+
+.none{
+    display: none;
+}
+.icon__on__contact{
+    width: 310px;
+}
+.icon__on__contact svg:nth-child(1){
+    margin-left: 0 !important;
+}
+
+
+
+/***contact us css
+*/
+.contactUsBigMenu{
+    align-content: unset;
+}
+.contactUs{
+    width: 100%;
+    flex-direction: column;
+}
+
+.contactUs.menuWrapperGrid{
+    margin: 0;
+    height: auto;
+}
+.contactUs > .rightContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contactUs .brand__text_div{
+    width: 100%;
+}
+.menu2{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexColumn{
+    flex-direction: column;
+    gap: 20px;
+}
+.menu2 .followText, .menu2 .rightContainer{
+    width: 100%;
+    
+}
+.menu2 .follow__us__text{
+    width: 310px;
+}
+.menu2 .followText{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.menu2 .rightContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.margin{
+    margin-top: 5px;
+}
+.menu1Wrapper {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+/*form css
+*/
+
+.contact__Us__Form{
+    background-color: rgb(26 26 26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Form__Container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr;
+     */
+     grid-template-rows: 60px 60px 60px 60px 60px 60px 150px 65px ;
+     grid-template-areas: 
+     "head head"
+     "first last"
+     "company company"
+     "email email"
+     "phone phone"
+     "subject find"
+     "des des"
+     "submit submit "
+     ;
+     row-gap: 15px;
+     column-gap: 15px;
+     /* height: 90%; */
+     width: 80%;
+     /* margin-bottom: 20px; */
+}
+.Form__Container > div{
+    /* border: 1px solid white; */
+}
+.Form__Container textarea{
+    height: 100%;
+    padding: 31px;
+    border-style: solid;
+    width: 100%;
+    letter-spacing: 2px;
+    font-family: 'MadeOuterSansRegular';
+    font-weight: 400;
+    background-color: rgb(51 51 51);
+    border: none;
+    font-size: 12px;
+    color: white;
+    outline: none;
+    resize: none;
+    border-radius: 2px;
+    line-height: 1.3;
+    /* height: 100%; */
+}
+
+.Form__Container input {
+    /* background: border-box; */
+    /* border: gray; */
+    height: 100%;
+    padding: 31px;
+    border-style: solid;
+    width: 100%;
+    letter-spacing: 1px;
+    font-family: 'MadeOuterSansRegular';
+    font-weight: 400;
+    background-color: rgb(51 51 51);
+    /* border-color: #535353; */
+    /* border-width: 0.5px; */
+    /* border-right: none; */
+    border: none;
+    font-size: 14px;
+    outline: none;
+    height: 100%;
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0.509);
+    /* word-spacing: px; */
+}
+
+
+
+.Form__Container select {
+    /* background: border-box; */
+    /* border: gray; */
+    height: 100%;
+    padding-left: 31px;
+    /* padding: 0 31px 0 15px; */
+    border-style: solid;
+    width: 100%;
+    letter-spacing: 1px;
+    font-family: 'MadeOuterSansRegular';
+    font-weight: 400;
+    background-color: rgb(51 51 51);
+    border: none;
+    font-size: 14px;    
+    outline: none;
+    height: 100%;
+    border-radius: 2px;
+    color: rgba(255, 255, 255, 0.509);
+    appearance: none;
+    /* border-color: #535353; */
+    /* border-width: 0.5px; */
+    /* border-right: none; */
+    /* word-spacing: px; */
+}
+
+.Form__Container select > option{
+ /* padding: 20px 0 !important; */
+ color: white;
+
+ 
+}
+
+.Form__Container input::placeholder , .Form__Container textarea::placeholder {
+    /* opacity: 1; */
+    color: rgba(255, 255, 255, 0.509);    
+}
+
+.formHeading{
+    grid-area: head;
+    /* height: 35px; */
+    display: flex;
+    align-items: flex-end;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+.formHeading br {
+    display: none;
+}
+
+.FormInput1{
+    grid-area: first;
+
+}
+.FormInput2{
+    grid-area: last;
+
+}
+.FormInput3{
+    grid-area: company;
+
+}
+.FormInput4{
+    grid-area: email;
+
+}
+.FormInput5{
+    grid-area: phone;
+
+}
+.FormInput6{
+    grid-area: subject;
+
+}
+.FormInput7{
+    grid-area: des;
+
+}
+.FormInput8{
+    grid-area: submit;
+    display: flex;
+    justify-content: center;
+
+}
+
+.FormInput9{
+    grid-area: find;
+
+}
+
+.FormInput8 button {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(255, 159, 28);
+    outline: none;
+    border: none;
+    color: rgb(53, 45, 32);
+    font-size: 16px;
+    font-family: 'MadeOuterSansRegular';
+    font-weight: 400;
+    /* height: 50px; */
+
+}
+
+
+
+
+/*form css
+*/
+
+/*
+    onForm Submit
+    
+*/
+.statusContainer{
+    width: 80%;
+}
+.statusContainer h1 {
+    /* display: inline */
+}
+
+.successIcon{
+    /* width: 120px; */
+    width: 26rem;
+    left: -10rem ;
+    /* display: inline; */
+    /* clip-path: circle(50% at 50% 50%); */
+    border-radius:50%;
+    position: relative;
+    
+
+}
+
+.successIcon img {
+    width: 100%;
+    aspect-ratio: 1;
+
+}
+.success__container{
+    display: flex;
+    flex-direction: row;
+    /* font-size: 28px; */
+    font-weight: 400;
+    width: 90%;
+}
+.success__container h1 {
+    font-size: 45px;
+
+}
+
+.gotIt {
+  color: rgb(255, 159, 28);
+  font-weight: 400;
+  font-size: 60px;
+  display: block;
+  margin-bottom: 30px ;
+
+}
+
+/*
+    onForm Submit
+    
+*/
+
+
+
+/***contact us css
+*/
+
+
+
+@media screen and (max-width: 900px) {
+    .menu1Wrapper{
+        display: none;
+    }
+    .bigMenu{
+        grid-template-columns: 100%;
+    }
+    .Form__Container{
+        
+        grid-template-rows: 9% 9% 9% 9% 9% 9% 9% 9% 19% 11%;
+        grid-template-areas: 
+        "head head"
+        "first first"
+        "last last"
+        "company company"
+        "email email"
+        "phone phone"
+        "subject subject"
+        "find find" 
+        "des des"
+        "submit submit "
+        ;
+        row-gap: 10px;
+        /* column-gap: 15px; */
+        /* height: 90%; */
+        width: 80%;
+        height: 80%;
+        align-content: center;
+    }
+    
+    .formHeading{
+        grid-area: head;
+        /* height: 35px; */
+        display: flex;
+        align-items: flex-end;
+        font-size: 1rem;
+        padding-bottom: 10px
+    }
+    
+
+
+    .formHeading br {
+        display: inline;
+    }
+    .Form__Container input{
+        font-size: 0.8rem;
+    }
+
+    .gotIt{
+        font-size: 3rem;
+    }
+    .success__container h1 {
+        font-size: 23px;
+    
+    }
+    
+    .successIcon img{
+        width: 3.5rem;
+        position: absolute;
+        left: 22.5rem;
+        top: 0.4rem;
+    }
+    
+.success__container{
+    position: relative;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+}

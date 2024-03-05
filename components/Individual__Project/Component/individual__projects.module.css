@@ -1,0 +1,264 @@
+.Images__container{
+    /* display: grid; */
+    /* grid-template-columns: 30% 70%; */
+    /* gap: 10px;  */
+    display: flex;
+}
+.project__description {
+  position: fixed;
+  padding-Top:20px;
+  padding-left: 20px;
+  top: 0px;
+  left: 0px;
+  width: 28vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo_color_template{
+    display: flex;
+  
+}
+
+.logo > img {
+  width: 100%;
+  max-width: 15rem;
+  padding-left: 18px;
+  padding-top: 14px;
+}
+.logo{
+    padding: 0 10px;
+    width: 70%;
+    cursor: pointer;
+}
+.color_template{
+    width: 30%;
+    display: flex;
+    justify-content:end;
+    padding-right: 15px;
+}
+.group_color{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.color_div {
+  /* background-color: rgb(186,222,247); */
+  width: 25px;
+  height: 25px;
+  /* box-shadow: 7px 7px 20px -5px rgba(101,101,101,0.75);
+  -webkit-box-shadow: 7px 7px 20px -5px rgba(101,101,101,0.75);
+  -moz-box-shadow: 7px 7px 20px -5px rgba(101,101,101,0.75); */
+}
+
+.color_div1 {
+  background-color: rgb(186,222,247);
+}
+
+.color_div2{
+  background-color: rgb(166,193,229);
+}
+.color_div3{
+  background-color:   rgb(67,81,119)
+}
+.color_div4{
+  background-color:rgb(0,0,0)
+}
+
+.Images {
+  position: fixed;
+  width: 72vw;
+  top: 0px;
+  right: 0px;
+  padding: 20px 20px 29px 0px;
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* display: grid;
+  grid-template-columns: auto ; */
+  /* z-index: -1; */
+  
+}
+
+.Video {
+  object-fit: cover !important;
+}
+.Video video{
+}
+.Image{
+    width: 100%;
+}
+
+.Image > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.outer__close__btn {
+  background-color: #171717;
+  z-index: 1001;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  font-size: 36px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+.outer__close__btn svg{
+  color : white;
+  opacity: 0.9;
+}
+
+/* .outer__close__btn:hover svg, .outer__close__btn:hover{
+  opacity: 1;
+} */
+.outer__close__btn svg:hover {
+  color: #fe9e1b;
+}
+
+.paragraph{
+    font-family: 'Kamerik105-Book';
+    font-size: 13px;
+
+}
+.heading {
+    font-family: 'Kamerik105-Bold';
+    line-height: 16px;
+
+    font-size: 12px;
+    padding-bottom: 19px;
+}
+.projects__description{
+  font-family: 'MadeOuterSansRegular';
+  font-size: 10px;
+  padding-left: 28px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  top: 0;
+  left : 0;
+
+}  
+.projects__description p{
+  font-size: 15px;
+}  
+.projects__description h3{
+  font-size: 14px;
+}  
+
+.rightArrow{
+  background-color: rgb(254,158,27);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* position: absolute; */
+  font-size: 15px;
+  display: flex;
+  /* margin-top: -249px; */
+  justify-content: center;
+  align-items: center;
+  color: black;
+  cursor: pointer;
+  /* right: 0px; */
+}
+
+.rightArrow:hover{
+  color: black;
+  background: linear-gradient(27deg, rgba(221,221,221,1) 50%, rgba(102,102,102,1) 100%);
+}
+
+.contactUsContainer{
+  padding: 35px 0 ;
+}
+.contactUsSize {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.contactUsText{
+  font-family: 'Kamerik105-Bold';
+  font-size: 1.5rem;
+}
+.anyQuestion{
+  font-family: 'Kamerik105-Book';
+  font-size: 1rem;
+}
+
+.contactUsText p{
+  font-size: 17px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 900px) {
+
+  .project__description{
+    width: 100vw !important;
+    position: unset;
+    height: unset;
+    padding: 0 20px;
+  }
+  .projects__description {
+    padding: 0px;
+  }
+  .group_color{
+    flex-direction: row;
+    align-self: flex-end;
+  }
+
+  .Images__container{
+    flex-direction: column;
+  }
+  .projects__description{
+    position: unset;
+    height: unset;
+  }
+  .Images{
+    position: unset;
+    width: 100vw;
+    height: unset;
+    padding-left: 20px;
+    overflow-y: scroll;
+  }
+  .logo > img{
+    padding: 0;
+  }
+  .logo{
+    padding: 0;
+  }
+  .logo_color_template{
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .color_template {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .color_div{
+    width: 23px;
+    height: 23px;
+  }
+  .logo img{
+    position: relative;
+    left: -7.5px;
+  }
+}
+
+/* @media screen and (max-width: 767px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+} */
