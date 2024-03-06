@@ -13,7 +13,7 @@ import Image from 'next/image'
 
 const RecentProjectsSlider = () => {
   const [showIndividualPage, setShowIndividualPage] = useState({state: false, data: {}})
-  const onOpen = (data) => {
+  const onOpen = (data: any) => {
     setShowIndividualPage({state: true, data})
   }
 

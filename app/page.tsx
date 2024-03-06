@@ -7,7 +7,7 @@ import MainSlider from '@/components/home/MainSlider/MainSlider';
 import RecentProjectsSlider from '@/components/home/RecentProjectsSlider/RecentProjectsSlider';
 import Services from '@/components/home/Services/Services';
 import Process from '@/components/home/Process/Process';
-import LogoCollection from '@/components/home/LogoCollection/LogoCollection'
+import LogoCollection from '@/components/home/LogoCollection/logoCollection'
 import Testimonials from "@/components/home/Testimonials/Testimonials"
 import ContactUs from "@/components/home/ContactUs/ContactUs"
 import Footer from  "@/components/home/Footer/Footer"
