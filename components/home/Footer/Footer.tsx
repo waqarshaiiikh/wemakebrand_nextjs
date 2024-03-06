@@ -50,7 +50,7 @@ const Footer = () => {
           <div
             className={styles.logoWrapper}>
             <Link href='/#header' >
-              <Image src={logo} width={272} height={85} alt='weMakeBrand log' className={styles.logo} />
+              <Image src={logo} width={272} height={85}  alt='weMakeBrand log' className={styles.logo+ ' w-auto h-auto'} />
             </Link>
 
           </div>
