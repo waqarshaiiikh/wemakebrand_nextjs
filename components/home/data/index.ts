@@ -82,7 +82,6 @@ import C6 from "@/public/assets/imagery/individual project images/CREP PROTECT/i
 /** Avent */
 import A1 from "@/public/assets/imagery/individual project images/AVENT/individual projects 2-78.jpg";
 import A2 from "@/public/assets/imagery/individual project images/AVENT/individual projects 2-79.jpg";
-// import AVideo1 from "@/public/assets/imagery/individual project images/AVENT/SaveInsta.App - 2610511311013192674.mp4";
 
 /** BaitCoin*/
 import BaitThumbnail from "@/public/assets/imagery/OUR WORK - FINAL IMAGES/OUR PROJECTS PAGE IMAGES/WMB SITE DESIGN - MAIN PAGE - OUR PROJECTS PAGE - latest [Recovered]-11.webp"
@@ -581,7 +580,7 @@ const projects = [
     multipleImages: true,
     images: [A1, A2],
     hasVideo:true,
-    // videoSrc : AVideo1
+    videoSrc : "https://player.vimeo.com/video/919893184"
   },
   {
     color: ["241, 97, 73", "103, 163, 169", "226, 219, 207"],

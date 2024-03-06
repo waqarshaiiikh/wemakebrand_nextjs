@@ -1,0 +1,224 @@
+.rightArrow {
+    background-color: rgb(254, 158, 27);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* position: absolute; */
+    font-size: 43px;
+    display: flex;
+    /* margin-top: -249px; */
+    justify-content: center;
+    align-items: center;
+    /* right: 0px; */
+
+}
+
+.container__text__btn {
+    padding-top: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.what__next {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(249, 154, 26);
+    padding-bottom: 20px;
+
+    font-family: 'Kamerik105-Bold' !important;
+
+
+}
+
+.contents {
+    /* padding-left: 171px; */
+}
+
+.ContactUs {
+    background-color: rgb(12 11 11);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    box-shadow: 0 0 0 100vmax rgb(12 11 11);
+    clip-path: inset(-2px -100vmax 0 -100vmax);
+
+}
+
+.imCKKr {
+    font-family: 'Kamerik105-Bold' !important;
+}
+
+.from__you {
+    font-size: 60px;
+    width: 870px;
+    color: white;
+    line-height: 65px;
+    font-family: 'MadeOuterSansRegular' !important;
+
+}
+
+.hGTwsm {
+    font-family: 'MadeOuterSansRegular' !important;
+
+}
+
+.touch {
+    font-size: 65px;
+    width: 750px;
+    color: white;
+
+    padding-top: 8px;
+    line-height: 50px;
+    font-family: 'MadeOuterSansRegular' !important;
+}
+
+.rightArrow:hover {
+    color: black;
+    background: linear-gradient(27deg, rgba(221, 221, 221, 1) 50%, rgba(102, 102, 102, 1) 100%);
+}
+
+.line {
+    width: 670px;
+    height: 55px;
+    border: solid 12px #000;
+    border-color: rgb(254, 158, 27) transparent transparent transparent;
+    border-radius: 75%/61px 59px 0 0;
+}
+
+.pencilemark {
+    display: flex;
+
+    padding-top: 10px;
+    margin-left: -30px;
+
+}
+
+.pencilIcon {
+    padding-top: 12px;
+    position: relative;
+    left: -21px;
+    fill: white;
+}
+
+/* hr {
+    border: 1px solid #252525;
+  } */
+
+@media screen and (max-width:600px) {
+    .rightArrow {
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+
+    }
+
+    .container__text__btn {
+        padding-top: unset;
+    }
+
+    .what__next {
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+
+    .from__you {
+        font-size: 20px;
+        width: unset;
+        line-height: unset;        
+    }
+    
+    .touch {
+        font-size: 20px;
+        width: unset;
+        padding-top: 8px;
+        line-height: unset;
+    }
+
+    .ContactUs {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+    
+
+
+    .line {
+        width: 70%;
+        height: 55px;
+        border: solid 7px #000;
+        border-color: rgb(254, 158, 27) transparent transparent transparent;
+        border-radius: 100%/40px 40px 0 0;
+    }
+
+    .pencilemark {
+        display: flex;
+        padding-top: 0px;
+        margin-left: -15px;
+    }
+
+    .pencilIcon {
+        padding-top: 0px;
+        position: relative;
+        left: -10px;
+        fill: white;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+    .rightArrow {
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+
+    }
+
+    .container__text__btn {
+        padding-top: unset;
+    }
+
+    .what__next {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .from__you {
+        font-size: 30px;
+        width: unset;
+        line-height: unset;        
+    }
+    
+    .touch {
+        font-size: 30px;
+        width: unset;
+        padding-top: 8px;
+        line-height: unset;
+    }
+
+    .ContactUs {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+    
+
+
+    .line {
+        width: 70%;
+        height: 55px;
+        border: solid 7px #000;
+        border-color: rgb(254, 158, 27) transparent transparent transparent;
+        border-radius: 100%/40px 40px 0 0;
+    }
+
+    .pencilemark {
+        display: flex;
+        padding-top: 0px;
+        margin-left: -15px;
+    }
+
+    .pencilIcon {
+        padding-top: 0px;
+        position: relative;
+        left: -10px;
+        fill: white;
+    }
+}

@@ -66,7 +66,7 @@ const RecentProjectsSlider = () => {
               key={slides.id}
               onClick={() => { onOpen(slides) }} 
               className={`relative ${styles.slider__image__individual}`}>
-              <Image src={slides.img} alt='slider images' quality={10} priority/>
+              <Image src={slides.img} alt='slider images' quality={10}/>
               <div onClick={() => { onOpen(slides) }} className={`${styles.image__content} absolute`}>
                 <a   className={styles.view}>VIEW PROJECT</a>
               </div>

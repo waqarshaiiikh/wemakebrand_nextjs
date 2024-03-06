@@ -1,0 +1,229 @@
+
+.gridItem {
+  display: grid;
+  /* grid-template-columns: 10% 90%; */
+  /* gap: 2rem; */
+  grid-template-columns: 60px auto;
+}
+
+/* .gridItem:hover {
+  .content h1 {
+    font-size: 26px;
+  }
+
+  .content p {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .icon img {
+    width: 70px;
+    padding-right: 20px;
+  }
+ } */
+
+.service__collection {
+  padding-top: 60px;
+  /* padding-left: 70px; */
+  /* padding-right: 95px; */
+  padding-bottom: 70px;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 150px 150px; */
+  /* gap: 60px; */
+  grid-row-gap: 80px;
+  grid-column-gap:60px ;
+  text-align: justify;
+
+}
+
+/* .gridItems {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+  } */
+.gridContainer h1 {
+  font-family: 'MadeOuterSansRegular';
+  font-weight: 200;
+  font-size: 22px;
+}
+
+.gridContainer p {
+  font-family: 'Kamerik105-Book';
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  font-weight: lighter;
+  width: 100%;
+  padding-top: 8px;
+}
+
+.icon img {
+  width: 60px;
+  /* width: 100%; */
+  padding-right: 20px;
+  filter: invert(100%);
+}
+
+.heading {
+  font-family: 'MadeOuterSansRegular';
+  font-weight: 200;
+  font-size: 47px;
+  padding-bottom: 27px;
+  padding-top: 40px;
+  /* padding-left: 68px; */
+
+}
+
+.gridItem .paragraph {
+  font-size: 18px;
+  /* margin-left: 30px;  */
+  font-family: 'Kamerik105-Book';
+  font-weight: lighter;
+  text-align: center;
+
+}
+
+
+.anyquestion {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  background-color: #000;
+  color: #fff;
+  padding: 1.6rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  /* line-height: 53px; */
+  margin-left: 1px;
+}
+.anyQuestionGrid :hover{
+  background-color: #fe9e1b;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+
+.contacts {
+  font-family: 'MadeOuterSansRegular';
+  font-size: 29px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  .heading {
+    font-family: 'MadeOuterSansRegular';
+    font-weight: 200;
+    font-size: 28px;
+    padding-bottom: 27px;
+    /* text-align: center; */
+    padding-top: 40px;
+    padding-left: 0px;
+  }
+
+  .gridContainer {
+    grid-template-columns: auto;
+    row-gap: 35px;
+  }
+
+  .gridItem {
+    display: grid;
+  }
+
+  .gridContainer p {
+    font-family: 'Kamerik105-Book';
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-weight: lighter;
+    width: 100%;
+    padding-top: 8px;
+    padding-right: 32px;
+  }
+
+  .gridContainer h1 {
+    font-family: 'MadeOuterSansRegular';
+    font-weight: 200;
+    font-size: 20px;
+  }
+
+  .gridItem .paragraph {
+    font-size: 22px;
+    margin-left: 0;
+    font-family: 'Kamerik105-Book';
+    font-weight: lighter;
+    text-align: center;
+    padding-right: 0px!important;
+  }
+
+  .anyquestion {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .service__collection{
+    padding-bottom: 40px;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+
+  .heading {
+    font-family: 'MadeOuterSansRegular';
+    font-weight: 200;
+    font-size: 28px;
+    padding-bottom: 27px;
+    /* text-align: center; */
+    padding-top: 40px;
+    padding-left: 0px;
+  }
+
+  .gridContainer {
+    grid-template-columns: auto auto;
+    row-gap: 20px;
+  }
+
+  .gridItem {
+    display: grid;
+  }
+
+  .gridContainer p {
+    font-family: 'Kamerik105-Book';
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-weight: lighter;
+    width: 100%;
+    padding-top: 8px;
+  }
+
+  .gridContainer h1 {
+    font-family: 'MadeOuterSansRegular';
+    font-weight: 200;
+    font-size: 20px;
+  }
+
+  .gridItem .paragraph {
+    font-size: 22px;
+    margin-left: 0;
+    font-family: 'Kamerik105-Book';
+    font-weight: lighter;
+    text-align: center;
+    padding-right: 0px!important;
+  }
+
+  .anyquestion {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+}
+    

@@ -1,0 +1,132 @@
+.wrapper {
+    /* background-color: black; */
+    /* padding: 10px; */
+    padding-top: 67px;
+    padding-bottom: 150px;
+    position: relative;
+    bottom: -2px;
+    
+    box-shadow: 0 0 0 100vmax black;
+    clip-path: inset(0 -100vmax 0 -100vmax);
+
+}
+
+.processHeading h1 {
+    /* 
+    font-family: 'MadeOuterSansRegular';
+    
+    color: rgb(255, 255, 255);
+    padding-bottom: 70px;
+     */
+    text-transform: uppercase;
+    font-family: 'MadeOuterSansRegular';
+    font-weight: 200;
+    font-size: 47px;
+    padding-bottom: 70px;
+    color: white;
+    letter-spacing: 1.5px;
+
+}
+
+.process__shapes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-template-rows: 800px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: black;
+}
+.process1 {
+    clip-path: polygon(0 0, 90% 0%, 100% 50%, 90% 100%, 0 100%, 0% 50%);
+
+}
+.process2 {
+    clip-path: polygon(0 0, 90% 0%, 100% 50%, 90% 100%, 0 100%, 10% 50%);
+    margin-left: -12%;
+}
+.process3 {
+    clip-path: polygon(0 0, 100% 0%, 100% 50%, 100% 100%, 0 100%, 10% 50%);
+    margin-left: -12%;
+
+}
+.phase__bars{
+    padding-bottom: 35px;
+    padding-top: 35px;
+    display: flex;
+}
+.phase__bar__individual{
+    width: 80px;
+    height:8px;
+    background-color: rgb(255,159,28);
+    margin-right: 10px;
+}
+
+.phases__container {
+ display: grid;
+ grid-template-columns: 25% 25% 25%;
+ justify-content: space-between;
+ /* grid-template-rows: 800px; */
+}
+
+.phase {
+  color: rgb(255, 255, 255);
+
+  /* padding:50px 0; */
+}
+.phase h1{
+    font-family: 'MadeOuterSansRegular';
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    line-height: 30px;
+    font-weight: 100;
+}
+.phase p{
+  font-family: 'Kamerik105-Book';
+  line-height: 30px;
+  font-weight: 600;
+
+}
+
+
+@media screen and (max-width: 900px) {
+    .process__shapes{
+        top: 70px;
+        bottom: -45px;
+    }
+    .process__shapes, .phases__container {
+        grid-template-columns: auto;
+    }
+    .process1, .process2, .process3 {
+        clip-path:unset;
+    }
+    .wrapper{
+        padding-bottom: 20px;
+        padding-top: 20px;
+        bottom: unset;
+        background-color: black;
+        /* position: relative; */
+    }
+    .processHeading > h1 {
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+    .phase h1{
+        font-size: 1.3rem;
+    }
+    .content p{
+        font-size:16px;
+        font-weight: unset;
+        line-height: unset;
+        word-spacing: 3px;
+        /* text-align: justify; */
+    }
+    .phases__container{
+        row-gap: 30px;
+    }
+
+}

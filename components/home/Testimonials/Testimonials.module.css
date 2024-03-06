@@ -1,0 +1,114 @@
+.wrapper {
+    background-color: rgb(23,23,23);
+    border-style: none;
+    padding-right: 20px !important;
+    box-shadow: 0 0 0 100vmax rgb(23,23,23);
+    clip-path: inset(-2px -100vmax 0 -100vmax);
+
+}
+.wrapper > div {
+    /* max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+.testimonials {
+    height: 500px;
+    background-color: rgb(23,23,23);
+    /* background-color: #1a1a1a; */
+}
+
+.card {
+    background-color: rgb(33,33,33);
+    /* height: 900px; */
+    color: #fff;
+    width: 100%;
+    height: 350px;
+
+    padding:70px 50px;
+    
+}
+
+.comas {
+    font-size: 60px;
+    color: #676767;
+}
+.comas img {
+    width: 3rem  ;
+    
+    padding-left: 10px;
+    
+}
+
+.comments {
+    padding-bottom: 2rem;
+    padding-left: 10px;
+}
+
+.comments p{
+    gap: 10px;
+    font-family: 'Kamerik105-Book';
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+
+.brandLogo img {
+    padding-bottom: 1rem;
+    width: 100px;
+    height: auto;
+}
+
+
+@media screen and (max-width: 600px)  {
+            .comas {
+            font-size: 25px;
+            padding-left: 0;
+            
+            }
+            .card p{
+                gap: 10px;
+                font-family: 'Kamerik105-Book';
+                font-size: 15px;
+                line-height: 18px;
+                padding-left: 0px;
+            }
+            .card{
+                padding: 0px;
+                padding-top: 50px;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                height: auto;
+                margin-bottom: 3rem;
+            }
+            
+            .testimonials {
+                height: unset;
+            }
+
+}
+/*
+@media screen and (max-width: 1120px){
+    .card p{
+        width: 380px;
+        padding-left: 20px;
+        gap: 10px;
+        font-family: 'Kamerik105-Book';
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .card{
+        padding-top: 30px;
+        padding-bottom: 200px;
+    }
+    .comas {
+        font-size: 25px;
+        color: #676767;
+        padding-left: 25px;
+        
+        }
+        .brands img{
+            width: 1017px;
+        }
+}
+  */
