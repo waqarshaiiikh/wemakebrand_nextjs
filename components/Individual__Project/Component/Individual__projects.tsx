@@ -69,11 +69,11 @@ const Individual__projects = ({ project }: { project: projectsType }) => {
 
                     {project?.multipleImages ? project.images.map(
                         (image, i) => <div className={styles.Image} key={i}>
-                             <Image src={image} placeholder='blur' quality={50} alt="Project image" />
+                             <Image src={image} placeholder='blur' quality={40} alt="Project image" />
                             </div>
                         ) :
                         <div className={styles.Image}>
-                            <Image src={project?.img} placeholder='blur' quality={50} alt="Project image" />
+                            <Image src={project?.img} placeholder='blur' quality={40} alt="Project image" />
                         </div>
                     }
                     {project?.hasVideo &&
