@@ -17,7 +17,7 @@ const Projects_Showcase = ({ projects}: {projects: any[]}) => {
           {projects.map((project) => {
             const { id, img, title, text } = project
             return (
-              <Link key={id} href={`/project/${id}`} className={`${styles.gridItem} group`} style={{cursor: 'pointer'}} >
+              <Link key={id} href={`/projects/${id}`} className={`${styles.gridItem} group`} style={{cursor: 'pointer'}} >
                   <FadeInDiv className={`${styles.overlay} group-hover:flex`}>
                     <div className={styles.content}>
                       <h1>{title}</h1>
