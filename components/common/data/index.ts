@@ -303,7 +303,24 @@ import Y1 from "@/public/assets/imagery/individual project images/YOUNG KINGS/in
 import topicaImage from '@/public/assets/imagery/OUR PROJECTS PAGE IMAGES/rectangle/WMB SITE DESIGN - MAIN PAGE - OUR PROJECTS PAGE - latest [Recovered]-28.webp'
 import alwadan from '@/public/assets/imagery/OUR PROJECTS PAGE IMAGES/rectangle/WMB SITE DESIGN - MAIN PAGE - OUR PROJECTS PAGE - latest [Recovered]-25.webp'
 
-const projects = [
+export type projectsType = {
+    color: string[],
+    id: number|string,
+    img: any,
+    title: string,
+    multipleImages?: boolean,
+    images: any[],
+    text: string,
+    client?: string,
+    summary: string,
+    summary2?: string,
+    hasVideo?: boolean,
+    videoSrc?: string,
+    iframe? : boolean,
+    
+}
+
+const projects : projectsType[]= [
   {
     color: ["0,0,0", "244, 186, 0", "78, 31, 131"],
     id: 1,
@@ -317,7 +334,7 @@ const projects = [
   },
   {
     color: ["207, 17, 24", "0, 0, 0", "255,255,255"],
-    id: "morleys",
+    id: 2,
     multipleImages: true,
     img: project2,
     images: [MOR1, MOR2, MOR3],
@@ -339,7 +356,7 @@ const projects = [
       "0,0,0",
       "255,255,255",
     ],
-    id: 20,
+    id: 3,
     img: topicaImage,
     title: "tapioca world",
     text: "Logo & Brand Identity, Packaging design, Interior graphics",
@@ -358,7 +375,7 @@ const projects = [
       "230, 230, 230",
       "255,255,255",
     ],
-    id: "maverick",
+    id: 4,
     multipleImages: true,
     img: project5,
     images: [MAV1, MAV2, MAV3, MAV4, MAV5, MAV6, MAV7, MAV8],
@@ -369,7 +386,7 @@ const projects = [
   },
   {
     color: ["94, 132, 46", "189, 207, 30", "245, 215, 156", "189, 99, 23"],
-    id: 16,
+    id: 5,
     img: TOPThumbnail,
     title: "top falafel",
     client: "Top Falafel",
@@ -380,7 +397,7 @@ const projects = [
   },
   {
     color: ["186,222,247", "166,193,229", "67,81,119", "0,0,0"],
-    id: "baitcoin",
+    id: 6,
     multipleImages: true,
     img: BaitThumbnail,
     images: [B1, B2, B3, B4],
@@ -391,7 +408,7 @@ const projects = [
   },
   {
     color: ["245, 177, 0", "59, 38, 29", "255,255,255"],
-    id: "burger-depot",
+    id: 7,
     multipleImages: true,
     img: BurgerThumbnail,
     images: [BUR1, BUR2, BUR3, BUR4, BUR5, BUR6, BUR7, BUR8, BUR9, BUR10],
@@ -413,7 +430,7 @@ const projects = [
       "0,0,0",
       "255,255,255",
     ],
-    id: 20,
+    id: 8,
     img: TapiocaThumbnail,
     title: "tapioca world",
     multipleImages: true,
@@ -425,7 +442,7 @@ const projects = [
   },
   {
     color: ["2,2,1", "227,6,19", "254,179,9"],
-    id: 21,
+    id: 9,
     img: HotThumbnail,
     title: "HotVille",
     client: "HotVille",
@@ -436,7 +453,7 @@ const projects = [
   },
   {
     color: ["83, 64, 34", "243, 238, 218"],
-    id: 18,
+    id: 10,
     img: BreadThumbnail,
     title: "daily bread bakery",
     client: "Daily Bread",
@@ -456,7 +473,7 @@ const projects = [
       "234, 234, 234",
       "255, 219, 55",
     ],
-    id: "cagora",
+    id: 11,
     multipleImages: true,
     img: project6,
     images: [CA1, CA2, CA3, CA4],
@@ -467,7 +484,7 @@ const projects = [
   },
   {
     color: ["0,0,0", "255,255,255"],
-    id: 24,
+    id: 12,
     img: SkinThumbnail,
     title: "SKINTHETICS",
     client:"Skinthetics",
@@ -479,7 +496,7 @@ const projects = [
   },
   {
     color: ["218, 148, 97", "195, 207, 160"],
-    id: 4,
+    id: 13,
     img: PettirThumbnail,
     title: "pettir",
     client: "Pettir",
@@ -506,7 +523,7 @@ const projects = [
    
   {
     color: ["47,46,53", "230, 208, 171"],
-    id: 22,
+    id: 15,
     img: DaskalosThumbnail1,
     title: "DASKALOS",
     client:"Daskalos",
@@ -518,7 +535,7 @@ const projects = [
   },
   {
     color: ["47,46,53", "230, 208, 171"],
-    id: 22,
+    id: 16,
     img: DaskalosThumbnail2,
     title: "DASKALOS",
     client:"Daskalos",
@@ -531,7 +548,7 @@ const projects = [
  
   {
     color: ["0, 80, 115", "112, 198, 236", "17, 153, 211"],
-    id: 23,
+    id: 17,
     img: MulticreationThumbnail,
     title: "MULTI-CREATION",
     client: "Multi-creation",
@@ -549,7 +566,7 @@ const projects = [
       "230, 230, 230",
       "255,255,255",
     ],
-    id: "maverick",
+    id: 18,
     multipleImages: true,
     img: new_maverick,
     images: [MAV1, MAV2, MAV3, MAV4, MAV5, MAV6, MAV7, MAV8],
@@ -560,7 +577,7 @@ const projects = [
   },
   {
     color: ["0,0,0", "255,255,255"],
-    id: 8,
+    id: 19,
     img: LashThumbnail,
     title: "lash lift",
     text: "Logo / Brand Identity",
@@ -571,7 +588,7 @@ const projects = [
   
   {
     color: ["0,0,0", "255,255,255"],
-    id: 19,
+    id: 20,
     img: project19,
     title: "avent",
     client: "Avent",
@@ -584,7 +601,7 @@ const projects = [
   },
   {
     color: ["241, 97, 73", "103, 163, 169", "226, 219, 207"],
-    id: 15,
+    id: 21,
     img: project14,
     title: "vietnamese kitchen",
     client: "Vietnamese Kitchen",
@@ -595,7 +612,7 @@ const projects = [
   }, 
   {
     color: ["0,0,0", "255,255,255", "194,25,33"],
-    id: 17,
+    id: 22,
     img: YoungThumbnail,
     title: "young kings tv",
     client: "Young Kings TV",
@@ -613,7 +630,7 @@ const projects = [
       "181, 243, 218",
       "255,255,255",
     ],
-    id: 9,
+    id: 23,
     img: alwadan,
     title: "Al - Walidayn",
     client: "Al - Walidayn",
@@ -635,7 +652,7 @@ const projects = [
       "64, 44, 28",
       "164, 143, 94",
     ],
-    id: 10,
+    id: 24,
     img: BuckleThumbnail,
     title: "Buckle and Thread",
     client:"Buckle and Thread",
@@ -650,42 +667,14 @@ const projects = [
   },
   {
     color: ["94, 132, 46", "189, 207, 30", "245, 215, 156", "189, 99, 23"],
-    id: 16,
+    id: 25,
     img: TOPThumbnail2,
     title: "top falafel",
     text: "Logo & Brand Identity",
     summary:"Based in Birmingham city centre, this popular falafel takeaway contacted us to create a new fun, vibrant and fresh look for their rebrand. Their logo needed to stand out amongst other stalls, so we created an eye-catching illustration accompanied by a colourway resembling their freshly made produce.",
     multipleImages: true,
     images: [TOP1, TOP2, TOP3, TOP4, TOP5],
-  },
-  // {
-  //   color: ["102, 45, 145", "177, 115, 159", "209, 0, 197", "20, 123, 30"],
-  //   id: 11,
-  //   img: project11,
-  //   title: "sandflames lounge & grill",
-  //   text: "",
-  //   images: [SAND1, SAND2, SAND3, SAND4],
-  //   multipleImages: true,
-  // },
-  // {
-  //   color: [
-  //     "208, 159, 13",
-  //     "248, 199, 98",
-  //     "27, 161, 112",
-  //     "16, 106, 68",
-  //     "48, 128, 142",
-  //     "16, 70, 104",
-  //     "232, 170, 182",
-  //     "151, 80, 153",
-  //   ],
-  //   id: 12,
-  //   img: project12,
-  //   title: "sapores",
-  //   text: "",
-  //   images: [SAP1, SAP2, SAP3, SAP4],
-  //   multipleImages: true,
-  // },
-  
+  }
 ];
 
 export const RecentProjects = [

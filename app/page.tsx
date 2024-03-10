@@ -10,17 +10,16 @@ import Process from '@/components/home/Process/Process';
 import LogoCollection from '@/components/home/LogoCollection/logoCollection'
 import Testimonials from "@/components/home/Testimonials/Testimonials"
 import ContactUs from "@/components/home/ContactUs/ContactUs"
-import Footer from  "@/components/home/Footer/Footer"
+import Footer from  "@/components/common/Footer/Footer"
 
 
 const fadInKeyFrame = keyframes`${fadeIn}`;
 
 const FadeInDiv = styled.div`
-    animation: 2s ${fadInKeyFrame};
-    max-width: var(--max-width);
-    margin-left: auto;
-    margin-right: auto;
-  
+  animation: 2s ${fadInKeyFrame};
+  max-width: var(--max-width);
+  margin-left: auto;
+  margin-right: auto; 
 `
 export default function Home() {
 
@@ -32,7 +31,6 @@ export default function Home() {
         <meta property="og:image" content="https://www.wemakebrandsltd.com/assets/WMB%20-%20MAIN%20LOGO%20-%20BLACK-96578e01.png" />
         <meta property="og:url" content="https://www.wemakebrandsltd.com/" />
       </Head>
-
       <FadeInDiv>
         <Header />
         <MainSlider />

@@ -7,3 +7,7 @@ export default function Default() {
     <Home/>
   );
 }
+
+// export default function Default() {
+//   return null
+// }

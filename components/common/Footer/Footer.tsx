@@ -1,13 +1,9 @@
+"use client";
 import styles from './Footer.module.css'
 import logo from '@/public/assets/logos/WMB - MAIN LOGO - WHITE.png'
-// import location__image from '@/public/assets/services icons/location.svg';
 import { FaInstagram, FaTiktok, FaLinkedinIn } from 'react-icons/fa';
-// import { HashLink } from 'react-router-hash-link'
-// import { useState } from 'react'
-// import { ContactUsMenu } from '../Menu/Menu'
 import phone from '@/public/assets/services icons/contact icons/contact icons-10.png';
 import mail from '@/public/assets/services icons/contact icons/contact icons-06.png';
-// import { GiDividedSpiral } from 'react-icons/gi'
 import emailjs from 'emailjs-com'
 import useNotify from './useNotify'
 import { usePathname, useRouter } from 'next/navigation';

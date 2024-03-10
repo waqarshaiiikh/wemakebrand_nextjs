@@ -1,7 +1,7 @@
 import Carousel from 'react-multi-carousel'
 import styles from './RecentProjectsSlider.module.css'
 import { styled } from 'styled-components'
-import { RecentProjects } from '../data'
+import { RecentProjects } from '../../common/data'
 import { useState } from 'react'
 import Image from 'next/image'
 // import IndividualProject from '../../Individual__Project'

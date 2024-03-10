@@ -40,7 +40,7 @@
 }
 
 .stayInTouchText{
-    color: rgb(115, 115, 115);
+    color: #9C9C9C;
     font-family: 'Kamerik105-Book';
 }
 .socialIconsWrapper {
@@ -50,7 +50,7 @@
 
 .socialIcon {
     font-size: 25px;
-    color: rgb(115, 115, 115);
+    color: #9C9C9C;
     display: inline;
     justify-content: space-between;
 
@@ -193,7 +193,7 @@
     font-size: 14px;
     font-family: 'Kamerik105-Book';
     letter-spacing: 1px;
-    color: rgb(115, 115, 115);
+    color: #9C9C9C;
 }
 .list:hover{
    color:  white;
@@ -209,7 +209,7 @@
 .footer2{
     padding-top: 130px;
     font-family: 'Kamerik105-Book';
-    color: rgb(115, 115, 115);
+    color: #9C9C9C;
 }
 .lowerSection{
     display: flex;
@@ -237,7 +237,7 @@
     right: 23px; */
     font-size: 14px;
     width: 173px;
-    color: rgb(115, 115, 115);
+    color: #9C9C9C;
 
 }
 .line2{
@@ -440,7 +440,7 @@
     text-align: center;
     font-size: 19px;
     font-family: sans-serif;
-    color: rgb(115, 115, 115);
+    color: #9C9C9C;
     padding-bottom: 20px;
     }
     .contactInfo{
@@ -460,7 +460,7 @@
         font-size: 18px;
         font-family: sans-serif;
         letter-spacing: 1px;
-        color: rgb(115, 115, 115);
+        color: #9C9C9C;
     }
     .sendUsABrief{
         padding-top: 25px;
@@ -529,7 +529,7 @@ padding-bottom: 25px;
     }
     .socialIcon{
         font-size: 25px;
-    color: rgb(115, 115, 115);
+    color: #9C9C9C;
     display: inline;
     padding-left: 20px;
     justify-content: space-between;
@@ -543,7 +543,7 @@ padding-bottom: 25px;
         text-align: left;
         font-size: 14px;
     font-family: sans-serif;
-    color: rgb(115, 115, 115);
+    color: #9C9C9C;
     padding-bottom: 20px;
     }
     .contactInfo{
@@ -563,7 +563,7 @@ padding-bottom: 25px;
         font-size: 14px;
         font-family: sans-serif;
         letter-spacing: 1px;
-        color: rgb(115, 115, 115);
+        color: #9C9C9C;
     }
     .sendUsABrief{
         font-family: sans-serif;

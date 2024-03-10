@@ -1,7 +1,7 @@
-import Individual__projects from './Component/Individual__projects';
+"use client";
+import IndividualProject from './Component/Individual__projects';
 import { fadeInDown} from 'react-animations';
 import { keyframes, styled } from 'styled-components';
-import { createPortal } from 'react-dom';
 import { useEffect } from 'react';
 const fadInKeyFrame = keyframes`${fadeInDown}`;
 
@@ -19,7 +19,7 @@ const FadeInDiv = styled.div`
   }
 `
 
-const Index = ({ project, onClose }) => {
+const Index = ({ project }: {project: any}) => {
   useEffect(() => {
     document.body.style.overflow = 'hidden';
     return () => {
@@ -27,12 +27,9 @@ const Index = ({ project, onClose }) => {
     };
   }, []);
 
-  return createPortal( 
-
-  <FadeInDiv>
-      <Individual__projects project={project} onClose={onClose} />
-      {/* <Footer/> */}
-  </FadeInDiv> ,  document.getElementById('modal'));
+  return <FadeInDiv>
+      <IndividualProject project={project}/>
+  </FadeInDiv> 
 }
 
 export default Index;

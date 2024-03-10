@@ -78,13 +78,12 @@ const Services = () => {
             </div>
           </div>
           
-          <div className={`${styles.gridItem} ${styles.anyQuestionGrid}`} onClick={()=>navigate.push("/contact-us")}>
-            < div className={styles.anyquestion}>
+          <div className={`${styles.gridItem} ${styles.anyQuestionGrid} `} onClick={()=>navigate.push("/contact-us")}>
+            < div className={`${styles.anyquestion} drop-shadow-xl`}>
               <p className={styles.paragraph}>ANY QUESTIONS?</p> 
               <span className={styles.contacts}>CONTACT US</span>
             </div>
           </div>
-          {/* {contactModal && <ContactUsMenu closeMenu={closeMenu}></ContactUsMenu>} */}
 
         </div>
       </div>
