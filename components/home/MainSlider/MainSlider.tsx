@@ -28,48 +28,48 @@ const TriangleDiv = styled.div((props)=>({
 }));
 
 
-const SwipperStyle = styled.div(()=>({
-  '& .swiper':{
-    width: '100%',
-  },
-  '& .swiper-slide':{
-    display: 'flex',
-    justifyContent: 'end',
-    // transition: 'opacity 0.5s ease',
-    opacity: 0,
-    animation: 'fadeOut 1.5s !important',
-  },
-  '& .swiper-slide-active':{
-    opacity: 1,
-    animation: 'none !important',
-  },
-  '& .swiper-pagination':{
-    position: 'unset',
-    display: 'flex',
-    justifyContent: 'start',
-    paddingLeft: 'calc(100% - 500px)',
-    paddingTop : '20px'
-  },
-  '& .swiper-pagination-bullet':{
-    width: '12px !important',
-    height: '12px !important',
-  },
-  '& .swiper-pagination-bullet-active':{
-    background: '#fe9e1b !important'
+// const SwipperStyle = styled.div(()=>({
+//   '& .swiper':{
+//     width: '100%',
+//   },
+//   '& .swiper-slide':{
+//     display: 'flex',
+//     justifyContent: 'end',
+//     // transition: 'opacity 0.5s ease',
+//     opacity: 0,
+//     animation: 'fadeOut 1.5s !important',
+//   },
+//   '& .swiper-slide-active':{
+//     opacity: 1,
+//     animation: 'none !important',
+//   },
+//   '& .swiper-pagination':{
+//     position: 'unset',
+//     display: 'flex',
+//     justifyContent: 'start',
+//     paddingLeft: 'calc(100% - 500px)',
+//     paddingTop : '20px'
+//   },
+//   '& .swiper-pagination-bullet':{
+//     width: '12px !important',
+//     height: '12px !important',
+//   },
+//   '& .swiper-pagination-bullet-active':{
+//     background: '#fe9e1b !important'
     
-  },
-  '& .swiper-wrapper ':{
-    cursor: 'default',
-  },
-  '@media screen and (min-width: 600px) and (max-width: 900px)':{
-    '& .swiper-slide':{
-      justifyContent: 'center',
-    },
-  }
+//   },
+//   '& .swiper-wrapper ':{
+//     cursor: 'default',
+//   },
+//   '@media screen and (min-width: 600px) and (max-width: 900px)':{
+//     '& .swiper-slide':{
+//       justifyContent: 'center',
+//     },
+//   }
   
 
 
-}))
+// }))
 
 
 const MainSlider = () => {
@@ -107,7 +107,7 @@ const MainSlider = () => {
         </div>
       </div>
 
-      <SwipperStyle className={`${styles.intro__slider} default__margin--right main-slider-class`} >
+      <div className={`${styles.intro__slider} default__margin--right main-slider-class`} >
         <Swiper
           fadeEffect={{
             crossFade: true
@@ -160,7 +160,7 @@ const MainSlider = () => {
             })
           }
         </Swiper>
-      </SwipperStyle>
+      </div>
     </div> 
   )
 }
