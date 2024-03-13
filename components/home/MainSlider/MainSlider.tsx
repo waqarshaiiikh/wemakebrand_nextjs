@@ -9,7 +9,7 @@ import slide5 from '@/public/assets/Main Slider/images-05.webp'
 import { styled } from 'styled-components';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Keyboard, Pagination } from 'swiper/modules';
-
+import AnimatedText from '@/components/home/AnimatedText';
 import "swiper/css/pagination";
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -22,7 +22,7 @@ import Image from 'next/image';
 const TriangleDiv = styled.div((props)=>({
   height:   '100%',
   width:    '410px',
-  backgroundColor: props.color,
+  // backgroundColor: props.color,
   clipPath: 'polygon(0 0, 100% 0%, 100% 100%, 46% 100%)',
   opacity: '0.75'
 }));
@@ -74,11 +74,11 @@ const SwipperStyle = styled.div(()=>({
 
 const MainSlider = () => {
   const sliderArray = [
-  { bgColor: '#31B3BB', image: slide1, heading:"ADVERTISEMENT", text:"We translate marketing objectives into visually captivating designs that engage, inform, and persuade your target audience." }, 
-  { bgColor: '#5CB6AB', image: slide2, heading: "WEB DESIGN", text: "We will enhance your brand by creating a visually appealing, user-friendly website that will engage visitors, and drive desired user actions." },
-  { bgColor: '#40ADAE', image: slide3, heading: "BRANDING", text: "When creating a brand we think about strategic visual design, considering your brand's values, personality, and positioning in the market." },
-  { bgColor: '#E2494A', image: slide4, heading:"PUSHING BOUNDARIES", text:"We like to break conventional design approaches and explore new avenues, creating designs that captivate, challenge, and inspire." },
-  { bgColor: '#F8CC5D', image: slide5, heading:"INNOVATIVE CONTENT", text: "Visually compelling & innovative content are essential in creating a strong online presence, engaging audiences and driving business growth." }];
+  { bgColor: 'rgb(49, 179, 187)', image: slide1, heading:"ADVERTISEMENT", text:"We translate marketing objectives into visually captivating designs that engage, inform, and persuade your target audience." }, 
+  { bgColor: 'rgb(37, 157, 143)' , image: slide2, heading: "WEB DESIGN", text: "We will enhance your brand by creating a visually appealing, user-friendly website that will engage visitors, and drive desired user actions." },
+  { bgColor: 'rgb(0, 145, 146)' , image: slide3, heading: "BRANDING", text: "When creating a brand we think about strategic visual design, considering your brand's values, personality, and positioning in the market." },
+  { bgColor: 'rgb(216, 12, 13)'  , image: slide4, heading:"PUSHING BOUNDARIES", text:"We like to break conventional design approaches and explore new avenues, creating designs that captivate, challenge, and inspire." },
+  { bgColor: 'rgb(245, 186, 39)' , image: slide5, heading:"INNOVATIVE CONTENT", text: "Visually compelling & innovative content are essential in creating a strong online presence, engaging audiences and driving business growth." }];
   const [backgroundColor, setBgColor] = useState(0);
 
 
@@ -93,17 +93,21 @@ const MainSlider = () => {
           
           <div className={`${styles.content} default__padding--left`}>
             <h1 className={styles.heading}>
-              COMMUNICATING VISIONS THROUGH COHERENT DESIGN.
+              <AnimatedText  className={styles.heading}>
+                COMMUNICATING VISIONS THROUGH COHERENT DESIGN.
+              </AnimatedText>
             </h1>
             <p className={styles.paragraph}>
-              Based in London UK, we specialize in timeless logo design and systematic brand solutions. Helping companies connect with their audiences and scale their business.
+              <AnimatedText>
+                Based in London UK, we specialize in timeless logo design and systematic brand solutions. Helping companies connect with their audiences and scale their business.
+              </AnimatedText>
             </p>
           </div>
-          <TriangleDiv color={sliderArray[backgroundColor].bgColor}></TriangleDiv>
+          <TriangleDiv style={{backgroundColor:sliderArray[backgroundColor].bgColor}}></TriangleDiv>
         </div>
       </div>
 
-      <SwipperStyle className={`${styles.intro__slider} default__margin--right`} >
+      <SwipperStyle className={`${styles.intro__slider} default__margin--right main-slider-class`} >
         <Swiper
           fadeEffect={{
             crossFade: true

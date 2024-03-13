@@ -87,7 +87,44 @@ padding
     padding-top: 4rem;
 }
 
-
+.main-slider-class{
+    .swiper{
+        width: 100%;
+      }
+    .swiper-slide{
+        display: flex;
+        justify-content: flex-end;
+        opacity: 0;
+        animation: fadeOut 1.5s !important;
+      }
+    .swiper-slide-active{
+        opacity: 1;
+        animation: none !important;
+    }
+    .swiper-pagination{
+        position: unset;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: calc(100% - 500px);
+        padding-top : 20px;
+    }
+    .swiper-pagination-bullet{
+        width: 12px !important;
+        height: 12px !important;
+      }
+    .swiper-pagination-bullet-active{
+        background: #fe9e1b !important;
+    }
+    .swiper-wrapper {
+        cursor: default;
+    }
+    @media screen and (min-width: 600px) and (max-width: 900px){
+        .swiper-slide{
+          justify-content: center;
+        }
+      }
+      
+}
 
 html {
   scroll-behavior: smooth;

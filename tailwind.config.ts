@@ -14,7 +14,13 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors:{
-        secondary: 'rgb(255,159,28)'
+        secondary: 'rgb(255,159,28)'   ,
+        slider1:   'rgb(101, 198, 204)',
+        slider2:   'rgb(92, 182, 171)' ,
+        slider3:   'rgb(64, 173, 174)' ,
+        slider4:   'rgb(226, 73, 74)'  ,
+        slider5:   'rgb(248, 204, 93)' ,
+
       }
     },
   },

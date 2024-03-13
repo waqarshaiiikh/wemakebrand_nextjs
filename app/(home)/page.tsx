@@ -15,8 +15,8 @@ import Footer from  "@/components/common/Footer/Footer"
 
 const fadInKeyFrame = keyframes`${fadeIn}`;
 
+// animation: 2s ${fadInKeyFrame};
 const FadeInDiv = styled.div`
-  animation: 2s ${fadInKeyFrame};
   max-width: var(--max-width);
   margin-left: auto;
   margin-right: auto; 
@@ -31,7 +31,7 @@ export default function Home() {
         <meta property="og:image" content="https://www.wemakebrandsltd.com/assets/WMB%20-%20MAIN%20LOGO%20-%20BLACK-96578e01.png" />
         <meta property="og:url" content="https://www.wemakebrandsltd.com/" />
       </Head>
-      <FadeInDiv>
+      <div className="ml-auto mr-auto max-w-[var(--max-width)]">
         <Header />
         <MainSlider />
         <RecentProjectsSlider />
@@ -41,7 +41,7 @@ export default function Home() {
         <Testimonials />
         <ContactUs />
         <Footer />
-      </FadeInDiv>
+      </div>
     </>
   );
 }
