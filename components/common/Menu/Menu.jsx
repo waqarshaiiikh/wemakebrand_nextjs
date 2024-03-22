@@ -57,6 +57,7 @@ const Menu = ({ closeMenu }) => {
                   <Image
                     src={logoWhite}
                     alt='logo in white color'
+                    quality={12}
                     onClick={() => {
                       navigate.push("/");
                     }}
@@ -93,7 +94,7 @@ const Menu = ({ closeMenu }) => {
                 <div
                   className={`${styles.menuNavItem} ${active && styles.active}`}
                 >
-                  <Link href='/#header' onClick={closeMenu}>
+                  <Link href='/#header' scroll={false} onClick={closeMenu}>
                     Home
                   </Link>
                 </div>
@@ -102,22 +103,22 @@ const Menu = ({ closeMenu }) => {
                     !active && styles.active
                   }`}
                 >
-                  <Link href='/projects' onClick={closeMenu}>
+                  <Link href='/projects' scroll={false} onClick={closeMenu}>
                     Our Work
                   </Link>
                 </div>
                 <div className={`${styles.menuNavItem}`}>
-                  <Link href='/#services' onClick={closeMenu}>
+                  <Link href='/#services' scroll={false} onClick={closeMenu}>
                     Services
                   </Link>
                 </div>
                 <div className={`${styles.menuNavItem}`}>
-                  <Link href='/#process' onClick={closeMenu}>
+                  <Link href='/#process' scroll={false} onClick={closeMenu}>
                     Process
                   </Link>
                 </div>
                 <div className={`${styles.menuNavItem}`}>
-                  <Link href='/contact-us'>Contact Us</Link>
+                  <Link href='/contact-us' scroll={false}>Contact Us</Link>
                 </div>
               </div>
             </div>

@@ -35,7 +35,7 @@ const Header = () => {
             </Link>
           </div>
           <div className={styles.goto}>
-            <Link href='/projects' className={styles.menu}>
+            <Link href='/projects' className={styles.menu} >
               OUR WORK
             </Link>
           </div>

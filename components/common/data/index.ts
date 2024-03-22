@@ -320,7 +320,7 @@ export type projectsType = {
     
 }
 
-const projects : projectsType[]= [
+const  projects : projectsType[]= [
   {
     color: ["0,0,0", "244, 186, 0", "78, 31, 131"],
     id: 1,

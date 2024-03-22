@@ -4,13 +4,16 @@ import styled, { keyframes } from 'styled-components';
 import { fadeIn } from 'react-animations';
 import Image from 'next/image';
 import Link from 'next/link';
-const fadInKeyFrame = keyframes`${fadeIn}`;
+import projectsData from '@/components/common/data'
 
-const FadeInDiv = styled.div`
-animation: 0.5s ${fadInKeyFrame};
-`
-const Projects_Showcase = ({ projects}: {projects: any[]}) => {
 
+const Projects_Showcase = () => {
+  const projects = projectsData;
+  const fadInKeyFrame = keyframes`${fadeIn}`;
+
+  const FadeInDiv = styled.div`
+  animation: 0.5s ${fadInKeyFrame};
+  `
   return (
     <div className={styles.Projects_Showcase}>
         <div className={styles.gridContainer}>

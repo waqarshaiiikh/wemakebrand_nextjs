@@ -1,20 +1,21 @@
 import Footer from "@/components/common/Footer/Footer"
 import Projects from "@/components/our-work/project_showcase/Projects_Showcase"
-import projectsData from '@/components/common/data'
 import Menu from '@/components/our-work/MenuWrapper'
-import { Metadata } from "next";
+import { Metadata } from "next"
 
-const Index = () => {
+const Page = () => {
+
   return (
       <div>
         <Menu/>
-        <Projects projects={projectsData}/>
+        <Projects/>
         <Footer/>
       </div>
     )
 }
 
-export default Index;
+export default Page;
+
 
 export const metadata: Metadata = {
   title: "Projects | WeMakeBrands",

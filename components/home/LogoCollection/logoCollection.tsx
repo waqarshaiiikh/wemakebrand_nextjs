@@ -1,5 +1,5 @@
 import styles from "./LogoCollection.module.css";
-import logo1 from "@/public/assets/testimonials/Artboard 1.png";
+import logo1 from "@/public/assets/testimonials/Artboard 1-optimized.webp";
 import logo2 from "@/public/assets/testimonials/Artboard 2.png";
 import logo4 from "@/public/assets/testimonials/Artboard 4.png";
 import logo5 from "@/public/assets/testimonials/Artboard 5.png";
@@ -48,7 +48,7 @@ const logoCollection = () => {
       <div className={styles.logosContainer}>
         {logos.map((logo, i) => (
           <div className={styles.logo} key={i}>
-            <Image src={logo} alt='clients logo' />
+            <Image src={logo} alt='clients logo' quality={20} />
           </div>
         ))}
       </div>
