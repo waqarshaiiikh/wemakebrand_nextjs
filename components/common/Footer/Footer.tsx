@@ -111,7 +111,7 @@ const Footer = () => {
 
           <div className={styles.footerLinksContainer}>
             <div className={styles.footerLink}><Link className={styles.list} href='/#header'>Home</Link></div>
-            <div className={styles.footerLink}><Link className={styles.list} href='/Projects'>Our Work</Link></div>
+            <div className={styles.footerLink}><Link className={styles.list} href='/projects'>Our Work</Link></div>
             <div className={styles.footerLink}><Link className={styles.list} href='/#services'>Services</Link></div>
             <div className={styles.footerLink}><Link className={styles.list} href='/#process' >Process</Link></div>
             <div className={styles.footerLink}><Link className={styles.list} href='/contact-us'>Contact Us</Link></div>

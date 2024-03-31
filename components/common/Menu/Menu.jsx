@@ -102,7 +102,7 @@ const Menu = ({ closeMenu }) => {
                     !active && styles.active
                   }`}
                 >
-                  <Link href='/Projects' onClick={closeMenu}>
+                  <Link href='/projects' onClick={closeMenu}>
                     Our Work
                   </Link>
                 </div>
