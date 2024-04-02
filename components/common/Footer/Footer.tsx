@@ -56,7 +56,7 @@ const Footer = () => {
           <div className={styles.hr}></div>
 
           <div className={styles.socialIconsWrapper}>
-            <h1 className={styles.socialheading}>Follow us</h1>
+            {/* <h1 className={styles.socialheading}>Follow us</h1> */}
 
             <div className={styles.socialIcon}><FaInstagram /></div>
             <div className={styles.socialIcon}><FaTiktok /></div>
