@@ -23,7 +23,7 @@ const RecentProjectsSlider = () => {
   return (
     <div className={styles.wrapper} id='our-work'>
       <div className={`${styles.heading} default__padding--left`}>
-        <h1 className={styles.mainheading}>RECENT PROJECTS</h1>
+        <h2 className={styles.mainheading}>RECENT PROJECTS</h2>
       </div>
       <div className={`${styles.project__slider}  default__padding--left`} >
         <Carousel

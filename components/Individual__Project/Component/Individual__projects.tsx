@@ -104,8 +104,6 @@ const Individual__projects = ({ project }: { project: projectsType }) => {
 
                         </iframe>
                     }
-
-
                 </div>
             </div>
         </div>

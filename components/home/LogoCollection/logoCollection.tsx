@@ -35,15 +35,15 @@ const logoCollection = () => {
       className={`${styles.logoCollection} default__padding--left default__padding--right`}
     >
       <div className={styles.where}>
-        <p>OUR CLIENTS</p>
-        <h3>
+        <h2>OUR CLIENTS</h2>
+        <p>
           Here are some of the businesses who we have been
           <br />
           able to collaborate with over the years.
           <br />
           <span> </span>
           We hope to add you to the list!
-        </h3>
+        </p>
       </div>
       <div className={styles.logosContainer}>
         {logos.map((logo, i) => (
@@ -56,8 +56,8 @@ const logoCollection = () => {
         className={`${styles.line2} default__margin--left default__margin--right`}
       ></hr>
       <div className={`${styles.where} ${styles.where2}`}>
-        <p>TESTIMONIALS</p>
-        <h3>Here are a few kind words from some of our clients…</h3>
+        <h2>TESTIMONIALS</h2>
+        <p>Here are a few kind words from some of our clients…</p>
       </div>
     </div>
   );

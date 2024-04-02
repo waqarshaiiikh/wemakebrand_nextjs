@@ -75,7 +75,7 @@
     word-wrap: break-word;
 }
 
-.content h1 {
+.content h2 {
     font-family: 'MadeOuterSansRegular';
     text-transform: uppercase;
     font-weight: 500;
@@ -90,11 +90,11 @@
     width: 100%;
 }
 
-.gridItem:nth-child(1)  h1,
-.gridItem:nth-child(2)  h1,
-.gridItem:nth-child(3)  h1,
-.gridItem:nth-child(21) h1,
-.gridItem:nth-child(23) h1 {
+.gridItem:nth-child(1)  h2,
+.gridItem:nth-child(2)  h2,
+.gridItem:nth-child(3)  h2,
+.gridItem:nth-child(21) h2,
+.gridItem:nth-child(23) h2 {
     font-size: 44px;   
 }
 

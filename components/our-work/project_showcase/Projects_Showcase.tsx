@@ -20,7 +20,7 @@ const Projects_Showcase = ({ projects}: {projects: any[]}) => {
               <Link key={id} href={`/projects/${id}`} className={`${styles.gridItem} group`} style={{cursor: 'pointer'}} >
                   <FadeInDiv className={`${styles.overlay} group-hover:flex`}>
                     <div className={styles.content}>
-                      <h1>{title}</h1>
+                      <h2>{title}</h2>
                       <p>{text}</p>
                     </div>
                   </FadeInDiv>

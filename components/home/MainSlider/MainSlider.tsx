@@ -142,7 +142,6 @@ const MainSlider = () => {
         >
           {
             sliderArray.map((slide, i) => {
-              
               return (
                 <SwiperSlide key={i}>
                   <div
@@ -155,7 +154,6 @@ const MainSlider = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-
               )
             })
           }

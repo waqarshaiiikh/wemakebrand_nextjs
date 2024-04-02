@@ -18,7 +18,7 @@ const Process = () => {
 
   return (
     <div className={`${styles.wrapper} default__padding--left default__padding--right`} id='process'>
-      <div className={styles.processHeading}><h1>Our Process</h1></div>
+      <div className={styles.processHeading}><h2>Our Process</h2></div>
       <div className={styles.process__shapes}>
         <div className={styles.process1} style={{backgroundColor: PhasesArray[0].color}}></div>
         <div className={styles.process2} style={{backgroundColor: PhasesArray[1].color}}></div>
@@ -28,8 +28,8 @@ const Process = () => {
       <div className={styles.phases__container}>
         {PhasesArray.map(phase=>(
         <div className={`${phase.className} ${styles.phase}`} key={phase.id} >
-          <h1>{phase.phase}</h1>
-          <h1>{phase.heading}</h1>
+          <h3>{phase.phase}</h3>
+          <h3>{phase.heading}</h3>
           <div className={styles.phase__bars}>
             {phase.bar.map(bar=>(
               <div key={bar} className={styles.phase__bar__individual}></div>
