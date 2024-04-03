@@ -36,7 +36,7 @@
 .color_template{
     width: 30%;
     display: flex;
-    justify-content:end;
+    justify-content:flex-end;
     padding-right: 15px;
 }
 .group_color{

@@ -34,7 +34,7 @@ const SwipperStyle = styled.div(()=>({
   },
   '& .swiper-slide':{
     display: 'flex',
-    justifyContent: 'end',
+    justifyContent: 'flex-end',
     // transition: 'opacity 0.5s ease',
     opacity: 0,
     animation: 'fadeOut 1.5s !important',
