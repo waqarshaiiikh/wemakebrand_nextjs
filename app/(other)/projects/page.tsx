@@ -20,3 +20,5 @@ export const metadata: Metadata = {
   title: "Projects | WeMakeBrands",
   description: "Explore a collection of our diverse projects showcasing logo design, branding, social content, and more. From iconic brands to startups, discover how we bring creativity and strategy together to elevate businesses."
 };
+
+

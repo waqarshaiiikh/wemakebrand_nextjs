@@ -317,6 +317,8 @@ export type projectsType = {
     hasVideo?: boolean,
     videoSrc?: string,
     iframe? : boolean,
+    seoTitle: string,
+    seoDescription : string
     
 }
 
@@ -331,6 +333,9 @@ const projects : projectsType[]= [
     text: "Logos / Branding / Social Content / Website",
     client: "Crep Protect",
     summary: "We worked alongside Crep Protect on a number of projects, collaborating with the likes of DJ Khaled, Adidas, JD sports and more. Here is a collection of some of our favourite work we did, including email mailouts, product campaign assets and web posters.",
+    seoTitle :        "Crep Protect Collaboration - Branding, Social Content & More",
+    seoDescription :  "Explore our partnership with Crep Protect, crafting standout branding, social media content, and website design that drives engagement.",
+  
   },
   {
     color: ["207, 17, 24", "0, 0, 0", "255,255,255"],
@@ -342,8 +347,9 @@ const projects : projectsType[]= [
     client: "Morleys",
     text: "Print Design / Social Content / Event Stand Design",
     summary: "We worked with one of the UK’s leading Fast food chains Morleys to create a number of digital and print assets. Including Billboards, social posts and most recently Franchise event stands as well as proposal decks.",
+    seoTitle :        "Morleys Fast Food Chain - Digital & Print Branding Solutions",
+    seoDescription :  "Revamping Morleys with eye-catching digital and print assets. From billboards to franchise stands, discover our comprehensive branding approach.",
   },
-  
   {
     color: [
       "0,145,146",
@@ -364,8 +370,10 @@ const projects : projectsType[]= [
     images: [TAP1, TAP2, TAP3, TAP4, TAP5],
     client:"Tapioca",
     summary: "Our client wanted to capture her Brazilian roots through vibrant colours and playful branding for her new Tapioca restaurant opening in Portugal. We created a number of custom shapes and typography combined with a fun, dynamic colour palette to create an eye catching and distinguishable brand.",
+    seoTitle :        "Tapioca World Brand Identity - Colorful & Playful Branding",
+    seoDescription :  "Bringing Brazilian vibrance to Tapioca World in Portugal with bespoke shapes, typography, and a dynamic color palette. See our branding magic.",
+
   },
-  
   {
     color: [
       "0,0,0",
@@ -383,6 +391,9 @@ const projects : projectsType[]= [
     client: "Maverick",
     text: "Logo Rebrand / Complete Brand Identity / Social content / Print Design",
     summary: "The client requested a high end, premium and classy logo which incorporated the letter M as well as the shisha theme. We came up with a mark which perfectly combines the two elements. We worked closely on many assets including signage, menus, uniform, instagram posts, merch and more.",
+    seoTitle :        "Maverick Lounge Rebrand - Premium Logo & Identity Design",
+    seoDescription :  "Elevating Maverick Lounge with a luxurious logo and complete brand identity that reflects its premium shisha experience. Dive into our design journey.",
+ 
   },
   {
     color: ["94, 132, 46", "189, 207, 30", "245, 215, 156", "189, 99, 23"],
@@ -394,6 +405,9 @@ const projects : projectsType[]= [
     summary: "Based in Birmingham city centre, this popular falafel takeaway contacted us to create a new fun, vibrant and fresh look for their rebrand. Their logo needed to stand out amongst other stalls, so we created an eye-catching illustration accompanied by a colourway resembling their freshly made produce.",
     multipleImages: true,
     images: [TOP1, TOP2, TOP3, TOP4, TOP5],
+    seoTitle :"Top Falafel Rebrand - Fresh, Vibrant Logo & Branding",
+    seoDescription :  "Transforming Top Falafel with a fresh and eye-catching logo and brand identity that stands out in Birmingham city center. Discover our creative approach.",
+  
   },
   {
     color: ["186,222,247", "166,193,229", "67,81,119", "0,0,0"],
@@ -405,6 +419,8 @@ const projects : projectsType[]= [
     client: "Bait Coin",
     text: "Logo & Brand Identity, Social assets, Proposal desk",
     summary:"Our brief was to create a modern, minimal yet bold brand for a crypto currency. we also produced the digital assets produced for their social media as well as the digital Proposal Desk",
+    seoTitle :        "Bait Coin Branding - Modern, Minimalistic Crypto Identity",
+    seoDescription :  "Crafting a bold, minimalistic brand identity for Bait Coin, complete with engaging social assets and a sleek proposal desk. Explore our crypto branding solutions.",
   },
   {
     color: ["245, 177, 0", "59, 38, 29", "255,255,255"],
@@ -417,8 +433,10 @@ const projects : projectsType[]= [
     text: "Logo / Branding / Social Content / Website",
     summary:"The Burger Depot is a new gourmet burger takeaway based in West London. Our aim was to create a fun modern logo with a strong palette which we could stretch across the whole brand and stand out on the busy road. The brown and yellow colour tones were inspired by the burger cheese and patties, this links in all the elements back to the logo and strengthens the brand.",
     summary2:"We used the ‘Depot’ theme to create artwork which represents the preparation and delivery process of the burger, this theme is carried out through all stores, providing the brand with character and depth.",
+    seoTitle :        "The Burger Depot Brand Makeover - Fun & Modern Logo Design",
+    seoDescription :  "Creating a standout brand for The Burger Depot with a modern logo and cohesive branding that shines in West London. See our innovative designs.",
   },
-  {//rr2 tapica
+  {
     color: [
       "0,145,146",
       "243,182,67",
@@ -438,7 +456,8 @@ const projects : projectsType[]= [
     text: "Logo & Brand Identity, Packaging design, Interior graphics",
     client:"Tapioca",
     summary: "Our client wanted to capture her Brazilian roots through vibrant colours and playful branding for her new Tapioca restaurant opening in Portugal. We created a number of custom shapes and typography combined with a fun, dynamic colour palette to create an eye catching and distinguishable brand.",
-
+    seoTitle :        "Tapioca World Brand Revival - Vibrant Design & Packaging",
+    seoDescription :  "Breathing new life into Tapioca World with spirited branding and custom packaging design, inspired by Brazilian zest. Discover our design journey.",
   },
   {
     color: ["2,2,1", "227,6,19", "254,179,9"],
@@ -450,6 +469,9 @@ const projects : projectsType[]= [
     multipleImages: true,
     images: [HOT1, HOT2, HOT3, HOT4],
     summary: "A brand new fast food chain based in Leicester got in touch to create a strong brand with bold and memorable colours with the aim to stretch the brand across multiple franchise stores. We created a unique type based logo, which doubles up as an icon used in both the logo and brand patterns.",
+    seoTitle :        "HotVille Fast Food Branding - Bold Colors & Memorable Design",
+    seoDescription :  "Elevating HotVille with striking brand identity and interior graphics, setting a new standard for fast food chains in Leicester. Explore our creative solutions.",
+  
   },
   {
     color: ["83, 64, 34", "243, 238, 218"],
@@ -461,6 +483,9 @@ const projects : projectsType[]= [
     multipleImages: true,
     images: [DAI1, DAI2, DAI3, DAI4, DAI5, DAI6, DAI7],
     summary:"Our task was to come up with a logo and identity which represents a unique sandwich bar that sells bakery goods as well as fresh food. We came with an authentic icon which captures traditional ways of delivering bread.",
+    seoTitle :        "Daily Bread Bakery - Authentic Logo & Packaging Design",
+    seoDescription :  "Crafting a unique identity for Daily Bread Bakery with a vintage logo and sustainable packaging, reflecting the art of traditional baking. See our work.",
+  
   },
   {
     color: [
@@ -481,6 +506,9 @@ const projects : projectsType[]= [
     client: "Cagora",
     text: "Branding / Social Content / Website",
     summary:"We worked together to create a number of digital and print assets for an ambitious startup. By creating a brand which is recognisable, distinct and has depth, we were able to stretch across different mediums whilst having creative freedom but staying on brand. From their creative website to their leaflets and app store artwork, we were involved in all aspects.",
+    seoTitle :        "Cagora Digital Branding - Distinctive Web & Social Content",
+    seoDescription :  "Collaborating with Cagora to create a digital presence that stands out, through bespoke branding, website design, and social media content. Dive in.",
+
   },
   {
     color: ["0,0,0", "255,255,255"],
@@ -493,6 +521,9 @@ const projects : projectsType[]= [
     images: [SKIN1, SKIN2, SKIN3, SKIN4, SKIN5, SKIN6],
     summary:"Skinthetics is a highly professional laser hair reduction and skin care clinic based in Leamington Spa. They contacted us to create a minimal, sleek and beautiful logo which encapsulates their premium service.",
     summary2:"We used the smooth curves from the ‘S’, carefully removing elements but maintaining readability. This produced a logo mark which ticked all the boxes for the client.",
+    seoTitle :        "Skinthetics Beauty Clinic - Elegant Branding & Packaging",
+    seoDescription :  "Designing a minimal, sophisticated brand identity for Skinthetics, aligning with their high-end aesthetic and premium services. Discover elegance.",
+
   },
   {
     color: ["218, 148, 97", "195, 207, 160"],
@@ -504,6 +535,9 @@ const projects : projectsType[]= [
     images: [PET1, PET2, PET3, PET4, PET5, PET6, PET7, PET8],
     multipleImages: true,
     summary:"The aim was to create an identity for a Premium Pet accessory company, they wanted a text based logo which incorporated the animal elements. We did this through the use of negative space, and utilizing aspects of the letters to showcase these animal features.",
+    seoTitle :        "Pettir Premium Pet Accessories - Unique Logo & Brand Identity",
+    seoDescription :  "Creating a luxurious brand for Pettir, with a logo that intertwines pet elements and elegance, setting a new benchmark in pet accessories. Explore our design.",
+
   },
   {
     color: ["0,0,0", "255,255,255"],
@@ -517,7 +551,9 @@ const projects : projectsType[]= [
     multipleImages: true,
     hasVideo:false,
     videoSrc : 'https://player.vimeo.com/video/842372993?h=7777108242',
-    iframe: true
+    iframe: true,
+    seoTitle :        "Bare Ice Custom Jewelry - Sleek Logo & Brand Evolution",
+    seoDescription :  "Refining Bare Ice's brand with a minimalist logo that embodies bespoke jewelry craftsmanship and luxury. Uncover our creative process.",
 
   },
    
@@ -529,9 +565,11 @@ const projects : projectsType[]= [
     client:"Daskalos",
     text: "Logo & Brand Identity",
     summary:"We were asked to create a logo mark which represented the traditional Italian/Greek family Coffee blend business. We created an illustration of the head of the family to capture the family element, and used a strong font full of character to resemble a mixture of both countries.",
-    
     multipleImages: true,
     images: [DAS1, DAS2, DAS3, DAS4],
+    seoTitle :        "DASKALOS Coffee Blend - Traditional Branding & Illustration",
+    seoDescription :  "Honoring Italian-Greek heritage through DASKALOS's brand identity, with a familial illustration and robust character font. Taste the tradition.",
+  
   },
   {
     color: ["47,46,53", "230, 208, 171"],
@@ -543,9 +581,10 @@ const projects : projectsType[]= [
     summary:"We were asked to create a logo mark which represented the traditional Italian/Greek family Coffee blend business. We created an illustration of the head of the family to capture the family element, and used a strong font full of character to resemble a mixture of both countries.",
     multipleImages: true,
     images: [DAS1, DAS2, DAS3, DAS4],
-  },
-
+    seoTitle :        "DASKALOS Rebranding - Capturing Coffee Culture & Family Values",
+    seoDescription :  "Revisiting DASKALOS to enhance its brand story, focusing on family roots and coffee culture through detailed illustrations and typography. Delve into our design.",
  
+  },
   {
     color: ["0, 80, 115", "112, 198, 236", "17, 153, 211"],
     id: 17,
@@ -556,6 +595,9 @@ const projects : projectsType[]= [
     text: "Logo & Brand Identity",
     multipleImages: true,
     images: [MULTI1, MULTI2, MULTI3, MULTI4],
+    seoTitle :        "MULTI-CREATION Architectural Firm - Innovative Logo Design",
+    seoDescription :  "Designing a symbol for MULTI-CREATION that reflects architectural precision and creativity, combining the essence of M and C in an iconic logo. Explore our architecture-inspired design.",
+
   },
   {
     color: [
@@ -574,6 +616,9 @@ const projects : projectsType[]= [
     client:"Maverick Lounge",
     text: "Logo Rebrand / Complete Brand Identity / Social content / Print Design",
     summary:"The client requested a high end, premium and classy logo which incorporated the letter M as well as the shisha theme. We came up with a mark which perfectly combines the two elements. We worked closely on many assets including signage, menus, uniform, instagram posts, merch and more.",
+    seoTitle :        "Maverick Lounge Luxury Rebrand - Sophisticated Identity & Decor",
+    seoDescription :  "Transforming Maverick Lounge with a high-end rebrand, merging shisha culture with luxury through a refined logo and brand identity. Discover sophistication.",
+   
   },
   {
     color: ["0,0,0", "255,255,255"],
@@ -584,8 +629,10 @@ const projects : projectsType[]= [
     summary:"We worked alongside our client to create a bold and beautiful logo for their re-brand. They wanted a very minimal mark which captured the lash lifting process as well as combining the three L’s. We managed to merge the two elements and chose an elegant font to bring the logo together.",
     images: [LASH1, LASH2, LASH3, LASH4],
     multipleImages: true,
-  },
+    seoTitle :        "Lash Lift Beauty Enhancement - Minimalist Logo & Branding",
+    seoDescription :  "Crafting a delicate and bold brand for Lash Lift, with a logo that encapsulates the essence of beauty enhancements. See our minimalist approach.",
   
+  },
   {
     color: ["0,0,0", "255,255,255"],
     id: 20,
@@ -598,7 +645,10 @@ const projects : projectsType[]= [
     images: [A1, A2],
     hasVideo:false,
     videoSrc : "https://player.vimeo.com/video/919893184?h=a4480e4077",
-    iframe: true
+    iframe: true,
+    seoTitle :        "Avent Automotive Services - High-Performance Logo Design",
+    seoDescription :  "Accelerating Avent's brand with a sleek logo that signifies automotive excellence and enhancement. Gear up for a new identity.",
+ 
   },
   {
     color: ["241, 97, 73", "103, 163, 169", "226, 219, 207"],
@@ -610,6 +660,9 @@ const projects : projectsType[]= [
     summary:"A series of posters and menus created for Midlands largest Vietnamese food chain. These quirky designs were showcased across the city in various locations in an attempt to attract customers back into stores post lockdown.",
     multipleImages: true,
     images: [VIETN1, VIETN2, VIETN3, VIETN4, VIETN5],
+    seoTitle :        "Vietnamese Kitchen Culinary Delights - Creative Menu & Poster Design",
+    seoDescription :  "Bringing Vietnamese Kitchen's flavors to life with vibrant menu designs and posters that attract and delight. Savour the creativity.",
+  
   }, 
   {
     color: ["0,0,0", "255,255,255", "194,25,33"],
@@ -619,7 +672,10 @@ const projects : projectsType[]= [
     client: "Young Kings TV",
     summary:"The UK’s second largest urban meme page contacted us to rebrand their logo. This needed to be fun, playful and represent their target audience well. We kept their original colourway and refined the design, making it more professional but maintaining its youthful character.",
     text: "Logo Design",
-    images: [Y1]
+    images: [Y1],
+    seoTitle :        "Young Kings TV Urban Meme Culture - Edgy Logo Redesign",
+    seoDescription :  "Revamping Young Kings TV with a playful, professional logo that resonates with urban meme culture and its dynamic audience. Dive into the fun.",
+ 
   },
   
   {
@@ -642,8 +698,10 @@ const projects : projectsType[]= [
     multipleImages: true,
     hasVideo:false,
     videoSrc : "https://player.vimeo.com/video/842374093?h=15bd442330" ,
-    iframe: true
-
+    iframe: true,
+    seoTitle :        "Al - Walidayn Centre - Compassionate Branding for Orphanage",
+    seoDescription :  "Designing a heartwarming identity for Al - Walidayn Centre, symbolizing hope and care for its diverse departments. Embrace our compassionate approach.",
+  
   },
   {
     color: [
@@ -664,7 +722,10 @@ const projects : projectsType[]= [
     multipleImages: true,
     hasVideo:false,
     videoSrc :  "https://player.vimeo.com/video/842448227?h=3c0c0cce86",
-    iframe: true
+    iframe: true,
+    seoTitle :        "Buckle and Thread London's Fashion - Elegant Brand & Web Design",
+    seoDescription :  "Crafting an exquisite brand for Buckle and Thread, mirroring London's fashion ethos with sophisticated web and social presence. Discover the elegance.",
+ 
   },
   {
     color: ["94, 132, 46", "189, 207, 30", "245, 215, 156", "189, 99, 23"],
@@ -675,8 +736,13 @@ const projects : projectsType[]= [
     summary:"Based in Birmingham city centre, this popular falafel takeaway contacted us to create a new fun, vibrant and fresh look for their rebrand. Their logo needed to stand out amongst other stalls, so we created an eye-catching illustration accompanied by a colourway resembling their freshly made produce.",
     multipleImages: true,
     images: [TOP1, TOP2, TOP3, TOP4, TOP5],
+    seoTitle :        "Top Falafel Birmingham - Fresh Brand Identity & Illustration",
+    seoDescription :  "Reimagining Top Falafel with a lively brand and illustration that captures the essence of fresh, vibrant falafel cuisine. Bite into the freshness.",
+
   }
 ];
+
+
 
 export const RecentProjects = [
   {
@@ -706,7 +772,7 @@ export const RecentProjects = [
     title: "sapores",
     client: "Sapores",
     text: "Social Content",
-    summary:"We created a host of social media content for a hookah bar based in Camden, London. They needed content for their events, announcements, giveaways, social highlights and more. We worked closely with the photography team to capture very high-end imagery and elevated these through innovative and unique design techniques; thus creating a range of minimal but premium posts.",
+    summary:"We created a host of social media content for a hookah bar based in Camden, London. They needed content for their events, announcements, giveaways, social highlights and more. We worked closely with the photography team to capture very high-end imagery and elevated these through innovative and unique design techniques, thus creating a range of minimal but premium posts.",
     images: [SAP1, SAP2, SAP3, SAP4],
     multipleImages: true,
   },

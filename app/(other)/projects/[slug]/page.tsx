@@ -24,3 +24,12 @@ export const generateStaticParams = async () => {
     slug: project.id.toString(),
   }));
 };
+
+export async function generateMetadata({ params }: Props) {
+  const fetchProject = projectData.find(project=>project.id.toString() === params.slug )
+
+  return {
+    title: fetchProject!.seoTitle+ ' | WeMakeBrands',
+    description: fetchProject!.seoDescription,
+  }
+}
