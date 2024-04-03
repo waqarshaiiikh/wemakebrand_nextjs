@@ -16,3 +16,11 @@ export default function page({ params }: Props) {
     )
 
 }
+
+
+export const generateStaticParams = async () => {
+
+  return projectData.map(project => ({
+    slug: project.id.toString(),
+  }));
+};
