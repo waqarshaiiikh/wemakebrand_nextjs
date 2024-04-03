@@ -596,8 +596,9 @@ const projects : projectsType[]= [
     summary:"Logo mark created for high performance automotive service garage. The client needed a minimal mark which captured the enhancement process that they provide for their vehicles, we focused on the A which doubled up as an arrow symbolising the improvement of the vehicles.",
     multipleImages: true,
     images: [A1, A2],
-    hasVideo:true,
-    videoSrc : "https://player.vimeo.com/video/919893184"
+    hasVideo:false,
+    videoSrc : "https://player.vimeo.com/video/919893184?h=a4480e4077",
+    iframe: true
   },
   {
     color: ["241, 97, 73", "103, 163, 169", "226, 219, 207"],
