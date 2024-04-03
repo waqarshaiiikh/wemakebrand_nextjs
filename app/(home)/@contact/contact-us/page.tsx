@@ -85,7 +85,7 @@ const ContactUsMenu = () => {
   const navigate = useRouter();
   return <div className={styles2.bigMenuContainer}>
       <FadeInDiv2
-       onClick={()=> navigate.push("/")}
+       onClick={()=> navigate.back()}
        className={styles2.nonBigMenu}
       >
       </FadeInDiv2>
@@ -97,7 +97,7 @@ const ContactUsMenu = () => {
             <div className={styles2.brand__text_div}>
               <div className={styles2.brand__text}>
                 <div className={styles2.menuLogo}>
-                    <Image src={logoWhite} alt='logo in white background' onClick={()=>{navigate.push("/")}}/>
+                    <Image src={logoWhite} alt='logo in white background' onClick={()=>{navigate.back()}}/>
                 </div>
 
                 <div className={styles2.menuGetInTouch}>
