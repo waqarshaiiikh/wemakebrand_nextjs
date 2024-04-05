@@ -250,12 +250,13 @@
 .infoIcon{
     /* width: 26px; */
     color: #4a4a4a;
-    padding-right: 18px;
+    /* padding-right: 18px; */
 
 }
 .socialheading{
-    display: none;
+    display: block;
 }
+
 .infoIcon > img{
  width: 100%;
  filter: invert(50%);
@@ -392,15 +393,17 @@
         width: 18px;
         height: 18px;
     }
-    .infoIcon{
+    /* .infoIcon{
         padding-right: 0;
-    }
+    } */
     
 }
 
 @media screen and (min-width: 600px) and (max-width: 700px)     {
     .footer2{
         padding-top: 0px;
+        padding: 3rem  0 1rem 0;
+
     }
     .contactInfo{
         padding-left: 0;
@@ -417,6 +420,8 @@
     }
     .footer2{
         padding-top: 0px;
+        padding: 3rem  0 1rem 0;
+
     }
 }
 

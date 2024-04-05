@@ -9,7 +9,7 @@ type Props = {
 
 export default function page({ params }: Props) {
 
-    const fetchProject = projectData.find(project=>project.id.toString() === params.slug )
+    const fetchProject = projectData.find(project=>project.slug === params.slug )
 
     return (
       <Project project={fetchProject}/>
@@ -19,14 +19,16 @@ export default function page({ params }: Props) {
 
 
 export const generateStaticParams = async () => {
-
-  return projectData.map(project => ({
-    slug: project.id.toString(),
-  }));
+  const slugArray = projectData.map((project)=>project.slug);
+  return slugArray
+   .reduce((acc, curr) => acc.includes(curr)? acc : [...acc, curr], [] as string[])
+   .map(slug => ({
+     slug: slug,
+   }));
 };
 
 export async function generateMetadata({ params }: Props) {
-  const fetchProject = projectData.find(project=>project.id.toString() === params.slug )
+  const fetchProject = projectData.find(project=>project.slug === params.slug )
 
   return {
     title: fetchProject!.seoTitle, //+' | WeMakeBrands',

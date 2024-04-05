@@ -17,9 +17,9 @@ const Projects_Showcase = ({ projects}: {projects: any[]}) => {
     <div className={styles.Projects_Showcase}>
         <div className={styles.gridContainer}>
           {projects.map((project) => {
-            const { id, img, title, text } = project
+            const { id, img, title, text, slug } = project
             return (
-              <Link key={id} href={`/projects/${id}`} className={`${styles.gridItem} group overflow-hidden`} style={{cursor: 'pointer'}} >
+              <Link key={id} href={`/projects/${slug}`} className={`${styles.gridItem} group overflow-hidden`} style={{cursor: 'pointer'}} >
                 <Image  src={img} alt='project image' placeholder='blur' className='group-hover:scale-105 transition duration-1000 '/>
                   <FadeInDiv className={`${styles.overlay} group-hover:flex`}>
                     <div className={styles.content}>

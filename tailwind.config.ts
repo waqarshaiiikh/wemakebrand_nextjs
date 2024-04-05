@@ -11,7 +11,10 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",  
+      },
+      fontFamily: {
+        kamerik: ['Kamerik105-Book']
       },
       colors:{
         secondary: 'rgb(255,159,28)'   ,
@@ -20,8 +23,12 @@ const config: Config = {
         slider3:   'rgb(64, 173, 174)' ,
         slider4:   'rgb(226, 73, 74)'  ,
         slider5:   'rgb(248, 204, 93)' ,
-
+        footerText: '#9C9C9C',
+      },
+      letterSpacing: {
+        customSpacing: '1px',
       }
+
     },
   },
   plugins: [],

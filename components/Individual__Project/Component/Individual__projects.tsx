@@ -5,6 +5,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import Image from 'next/image';
 import { projectsType } from '@/components/common/data';
 import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 const Individual__projects = ({ project }: { project: projectsType }) => {
     const navigate = useRouter();
     const openHome = () => {
@@ -16,6 +17,20 @@ const Individual__projects = ({ project }: { project: projectsType }) => {
     const openContact = () => {
         navigate.push("/contact-us");
     }
+
+    useEffect(() => {
+        const handleKeyPress = (event: KeyboardEvent) => {
+            if (event.key === 'Escape') {
+                onClose();
+            }
+        };
+
+        document.addEventListener('keydown', handleKeyPress);
+
+        return () => {
+            document.removeEventListener('keydown', handleKeyPress);
+        };
+    }, []);
 
     return (
         <div className={styles.Individual__projects}>
@@ -70,13 +85,13 @@ const Individual__projects = ({ project }: { project: projectsType }) => {
                     {project?.multipleImages ? project.images.map(
                         (image, i) => <div className={`${styles.Image}`} key={i}>
                             <div className='overflow-hidden '>
-                             <Image src={image} placeholder='blur' quality={40}  alt="Project image" className='hover:scale-110 transition duration-1000 w-full' />
+                             <Image src={image} placeholder='blur' quality={40}  alt="Project image" className='hover:scale-110 transition duration-[10s] w-full' />
                             </div>
                             </div>
                         ) :
                         <div className={`${styles.Image}`}>
                             <div className='overflow-hidden'>
-                            <Image src={project?.img} placeholder='blur' quality={40}  alt="Project image"  className='hover:scale-110 transition duration-1000 w-full'/>
+                            <Image src={project?.img} placeholder='blur' quality={40}  alt="Project image"  className='hover:scale-110 transition duration-[10s] w-full'/>
                             </div>
                         </div>
                     }
