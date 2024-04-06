@@ -40,9 +40,9 @@ const Individual__projects = ({ project }: { project: projectsType }) => {
 
     return (
         <div className={styles.Individual__projects}>
-            {window.history.length > 2 && <div className={styles.outer__close__btn} onClick={onClose} >
+            <div className={styles.outer__close__btn} onClick={onClose} >
                 <RxCross2 />
-            </div>}
+            </div>
             <div className={styles.Images__container}>
                 <div className={styles.project__description} >
 
