@@ -106,7 +106,7 @@ const Footer = () => {
  */}
 
 
-      <div className='flex flex-wrap gap-10 pt-16 '>
+      <div className='flex flex-wrap gap-6 sm:gap-10 pt-16 '>
 
         <div className='flex flex-col gap-5  basis-full md:basis-1/3 lg:basis-1/4 flex-grow'>
           <Link href='/#header' className='cursor-pointer'>

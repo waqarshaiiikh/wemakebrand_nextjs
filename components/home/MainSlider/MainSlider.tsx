@@ -97,7 +97,7 @@ const MainSlider = () => {
               </AnimatedText>
             </p>
           </div>
-          <TriangleDiv style={{backgroundColor:sliderArray[backgroundColor].bgColor}}></TriangleDiv>
+          <TriangleDiv style={{backgroundColor:sliderArray[backgroundColor].bgColor}} className={styles.bgColor}></TriangleDiv>
         </div>
       </div>
 
