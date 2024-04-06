@@ -768,8 +768,7 @@ const projects : projectsType[]= [
 ];
 
 
-
-export const RecentProjects = [
+export const RecentProjects: projectsType[]= [
   {
     id: 3,
     color: ["83, 64, 34", "243, 238, 218"],
@@ -780,6 +779,10 @@ export const RecentProjects = [
     summary:"Our task was to come up with a logo and identity which represents a unique sandwich bar that sells bakery goods as well as fresh food. We came with an authentic icon which captures traditional ways of delivering bread.",
     multipleImages: true,
     images: [DAI1, DAI2, DAI3, DAI4, DAI5, DAI6, DAI7],
+    seoTitle :        "Daily Bread Bakery - Authentic Logo & Packaging Design",
+    seoDescription :  "Crafting a unique identity for Daily Bread Bakery with a vintage logo and sustainable packaging, reflecting the art of traditional baking. See our work.",
+    slug: "daily-bread",
+
   },
   {
     id: 1,
@@ -800,28 +803,37 @@ export const RecentProjects = [
     summary:"We created a host of social media content for a hookah bar based in Camden, London. They needed content for their events, announcements, giveaways, social highlights and more. We worked closely with the photography team to capture very high-end imagery and elevated these through innovative and unique design techniques, thus creating a range of minimal but premium posts.",
     images: [SAP1, SAP2, SAP3, SAP4],
     multipleImages: true,
+    seoTitle :        "Sapores Hookah Bar - Premium Social Media Content",
+    seoDescription :  "Crafting premium social media content for Sapores Hookah Bar, with innovative design techniques that elevate their brand. Explore our creative process.",
+    slug: "sapores",
   },
   { id: 4, 
     img: eatOut, 
     color: ["241, 97, 73", "103, 163, 169", "226, 219, 207"],
-  client: "Vietnamese Kitchen",
+    client: "Vietnamese Kitchen",
+    title: "vietnamese kitchen",
     text: "Menu design, Poster Design",
     summary:"A series of posters and menus created for Midlands largest Vietnamese food chain. These quirky designs were showcased across the city in various locations in an attempt to attract customers back into stores post lockdown.",
     multipleImages: true,
-    images: [VIETN1, VIETN2, VIETN3, VIETN4, VIETN5],
+    images: [VIETN1, VIETN2, VIETN3, VIETN4, VIETN5], 
+    seoTitle :        "Vietnamese Kitchen Culinary Delights - Creative Menu & Poster Design",
+    seoDescription :  "Bringing Vietnamese Kitchen's flavors to life with vibrant menu designs and posters that attract and delight. Savour the creativity.",
+    slug: "vietnamese-kitchen"
   },
  
   {
     id: 6,
     img: cares,
     color: ["0,0,0", "244, 186, 0", "78, 31, 131"],
-    title: "crep project",
+    title: "crep protect",
     multipleImages: true,
     images: [C1, C2, C3, C4, C5, C6],
     text: "Logos / Branding / Social Content / Website",
     client: "Crep Protect",
     summary: "We worked alongside Crep Protect on a number of projects, collaborating with the likes of DJ Khaled, Adidas, JD sports and more. Here is a collection of some of our favourite work we did, including email mailouts, product campaign assets and web posters.",
-  
+    seoTitle :        "Crep Protect Collaboration - Branding, Social Content & More",
+    seoDescription :  "Explore our partnership with Crep Protect, crafting standout branding, social media content, and website design that drives engagement.",
+    slug: "crep-protect"
   },
   {
     id: "cagora",
@@ -842,6 +854,10 @@ export const RecentProjects = [
     client: "Cagora",
     text: "Branding / Social Content / Website",
     summary:"We worked together to create a number of digital and print assets for an ambitious startup. By creating a brand which is recognisable, distinct and has depth, we were able to stretch across different mediums whilst having creative freedom but staying on brand. From their creative website to their leaflets and app store artwork, we were involved in all aspects.",
+    seoTitle :        "Cagora Digital Branding - Distinctive Web & Social Content",
+    seoDescription :  "Collaborating with Cagora to create a digital presence that stands out, through bespoke branding, website design, and social media content. Dive in.",
+    slug: "cagora"
+  
   },
   {
     id: "maverick",
@@ -860,6 +876,9 @@ export const RecentProjects = [
     client:"Maverick Lounge",
     text: "Logo Rebrand / Complete Brand Identity / Social content / Print Design",
     summary:"The client requested a high end, premium and classy logo which incorporated the letter M as well as the shisha theme. We came up with a mark which perfectly combines the two elements. We worked closely on many assets including signage, menus, uniform, instagram posts, merch and more.",
+    seoTitle :        "Maverick Lounge Luxury Rebrand - Sophisticated Identity & Decor",
+    seoDescription :  "Transforming Maverick Lounge with a high-end rebrand, merging shisha culture with luxury through a refined logo and brand identity. Discover sophistication.",
+    slug: "maverick-lounge"
   },
 
   {
@@ -872,7 +891,13 @@ export const RecentProjects = [
     summary:"We were approached by a popular shisha cafe based in London and asked to create various social media posts covering events, competitions, announcements and more. We used brand guidelines to ensure all posts were aligned and maintained a premium but conceptual look on all designs.",
     images: [SAND1, SAND2, SAND3, SAND4],
     multipleImages: true,
+    seoTitle :        "Sandflames Lounge & Grill - Premium Social Media Content",
+    seoDescription :  "Crafting premium social media content for Sandflames Lounge & Grill, with innovative design techniques that elevate their brand. Explore our creative process.",
+    slug: "sandflames",
+
   },
 ];
+
+export const slugArray = [...projects.map((project) => project.slug), ...RecentProjects.map((project) => project.slug)];
 
 export default projects;

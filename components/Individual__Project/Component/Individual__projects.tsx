@@ -12,7 +12,13 @@ const Individual__projects = ({ project }: { project: projectsType }) => {
         navigate.push('/');
     }
     const onClose = () => {
-        navigate.back();
+        // check the route history contain the projects or / route if it has then go back else go to home
+        if (window.history.length > 2) {
+            navigate.back();
+        } else {
+            navigate.push('/');
+        }
+
     }
     const openContact = () => {
         navigate.push("/contact-us");
@@ -34,9 +40,9 @@ const Individual__projects = ({ project }: { project: projectsType }) => {
 
     return (
         <div className={styles.Individual__projects}>
-            <div className={styles.outer__close__btn} onClick={onClose} >
+            {window.history.length > 2 && <div className={styles.outer__close__btn} onClick={onClose} >
                 <RxCross2 />
-            </div>
+            </div>}
             <div className={styles.Images__container}>
                 <div className={styles.project__description} >
 
@@ -85,13 +91,13 @@ const Individual__projects = ({ project }: { project: projectsType }) => {
                     {project?.multipleImages ? project.images.map(
                         (image, i) => <div className={`${styles.Image}`} key={i}>
                             <div className='overflow-hidden '>
-                             <Image src={image} placeholder='blur' quality={40}  alt="Project image" className='hover:scale-110 transition duration-[10s] w-full' />
+                                <Image src={image} placeholder='blur' quality={40} alt="Project image" className='hover:scale-110 transition duration-[10s] w-full' />
                             </div>
-                            </div>
-                        ) :
+                        </div>
+                    ) :
                         <div className={`${styles.Image}`}>
                             <div className='overflow-hidden'>
-                            <Image src={project?.img} placeholder='blur' quality={40}  alt="Project image"  className='hover:scale-110 transition duration-[10s] w-full'/>
+                                <Image src={project?.img} placeholder='blur' quality={40} alt="Project image" className='hover:scale-110 transition duration-[10s] w-full' />
                             </div>
                         </div>
                     }

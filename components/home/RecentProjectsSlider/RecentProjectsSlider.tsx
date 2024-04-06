@@ -4,6 +4,7 @@ import { styled } from 'styled-components'
 import { RecentProjects } from '../../common/data'
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 // import IndividualProject from '../../Individual__Project'
 
 // const ImageDiv = styled.div((props)=>({
@@ -12,14 +13,7 @@ import Image from 'next/image'
 // }));
 
 const RecentProjectsSlider = () => {
-  const [showIndividualPage, setShowIndividualPage] = useState({state: false, data: {}})
-  const onOpen = (data: any) => {
-    setShowIndividualPage({state: true, data})
-  }
-
-  const onClose = () => {
-    setShowIndividualPage({state: false, data: {}})
-  }
+ 
   return (
     <div className={styles.wrapper} id='our-work'>
       <div className={`${styles.heading} default__padding--left`}>
@@ -64,17 +58,15 @@ const RecentProjectsSlider = () => {
           {RecentProjects.slice(0, 8).map(slides =>
             <div  
               key={slides.id}
-              onClick={() => { onOpen(slides) }} 
               className={`relative ${styles.slider__image__individual}`}>
-              <Image src={slides.img} alt='slider images' quality={10}/>
-              <div onClick={() => { onOpen(slides) }} className={`${styles.image__content} absolute`}>
-                <a   className={styles.view}>VIEW PROJECT</a>
-              </div>
+              <Image src={slides.img} alt='slider images' quality={10} placeholder='blur' fill  />
+              <Link href={'/projects/'+slides.slug}  className={`${styles.image__content} absolute`}>
+                <p className={styles.view}>VIEW PROJECT</p>
+              </Link>
             </div>
           )}
         </Carousel>
       </div>
-      {/* {showIndividualPage.state && <IndividualProject project={showIndividualPage.data} onClose={onClose} />} */}
     </div>
     
   )

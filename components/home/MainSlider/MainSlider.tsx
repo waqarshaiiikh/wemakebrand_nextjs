@@ -141,7 +141,7 @@ const MainSlider = () => {
                   <div
                     className={`${styles.slider__image__individual} relative`}
                   >
-                    <Image src={slide.image} alt={`Slider Image ${i+1}`}/>
+                    <Image src={slide.image} alt={`Slider Image ${i+1}`} width={500} height={500}  placeholder='blur'/>
                     <div className={`${styles.image__content} leading-[1.16] absolute bottom-0 right-0 `}>
                       <MainTitles className='' >{slide.heading}</MainTitles>
                       <MenuText >{slide.text}</MenuText>
