@@ -16,6 +16,7 @@ import successIcon from "@/public/assets/CONTACTS PAGE/site icons-08.png";
 import emailjs from "emailjs-com";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { Metadata } from 'next';
 
 const fadInKeyFrame = keyframes`${fadeInRightBig}`;
 
@@ -286,3 +287,8 @@ const ContactUsMenu = () => {
 
 
 export default ContactUsMenu;
+
+export const metadata: Metadata = {
+  title: "Contact Us | WeMakeBrands",
+  description: "Based in London UK, we specialize in timeless logo design and systematic brand solutions. Helping companies connect with their audiences and scale their business.",
+};
