@@ -83,9 +83,18 @@ const ContactUsMenu = () => {
   }, [firstName, lastName, company, email, find, phoneNum, service, message]);
 
   const navigate = useRouter();
-  return <div className={styles2.bigMenuContainer}>
+  const onClose = () => {
+    // check the route history contain the projects or / route if it has then go back else go to home
+    if (window.history.length > 2) {
+        navigate.back();
+    } else {
+        navigate.push('/');
+    }
+
+}
+  return <div className={`${styles2.bigMenuContainer} bg-[#1a1a1ae6]`}>
       <FadeInDiv2
-       onClick={()=> navigate.back()}
+       onClick={onClose}
        className={styles2.nonBigMenu}
       >
       </FadeInDiv2>

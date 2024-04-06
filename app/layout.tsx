@@ -10,18 +10,15 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-  contact
+  children
 }: Readonly<{
   children: React.ReactNode;
-  contact : React.ReactNode;
 }>) {
   return (
     <html lang="en">
 
       <body className={inter.className}>
         {children}
-        {contact}
       </body>
     </html>
   );
